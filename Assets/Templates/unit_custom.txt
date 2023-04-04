@@ -1,0 +1,31 @@
+
+单位库
+"LiaozhaiUnits"
+{
+	"Version"		"1"
+
+	测试单位1001
+	"unit_ceshi_1001"
+	{
+		"SerialId"			"1001"										单位流水号id
+		"Trait"				"Tenacious"									单位特质(=>TraitType)
+		"AttackCapability"	"UNIT_CAP_MELEE_ATTACK"						单位默认攻击方式(=>UnitAttackCapabilityType)
+		"Skin"				"100101"									单位默认皮肤流水号id
+
+		攻击序列(优先攻击目标),参考操作多目标
+		"AttackOrder"
+		{
+			"1"
+			{
+				
+			}
+			
+			"2"
+			{
+				"Teams"		"UNIT_TARGET_TEAM_ENEMY"					敌方
+				"Types"		"UNIT_TARGET_ALL"							所有单位
+				"Sort"		"UNIT_TARGET_SORT_NEAREST"					距离最近的
+			}
+		}
+	}
+}

@@ -1,0 +1,462 @@
+﻿
+"LiaoZhaiBuiltinModifiers"
+{
+	"Version"		"1"
+	
+	"MODIFIER_STATE_NO_HEALTH_BAR"
+	{									
+		"SerialId"										"100"
+		"Name"											"隐藏血条"
+		"RemoveOnDeath"									"0"
+		"IsHidden"										"1"
+		"IsPurgable"									"0"
+		"Priority"										"999997"
+
+		"States"																			
+		{	
+			"MODIFIER_STATE_NO_HEALTH_BAR"				"MODIFIER_STATE_VALUE_ENABLED"		
+		}
+	}	
+	
+	"MODIFIER_STATE_INVISIBLE"
+	{									
+		"SerialId"										"101"
+		"Name"											"模型不可见"
+		"RemoveOnDeath"									"0"
+		"IsHidden"										"1"
+		"IsPurgable"									"0"
+		"Priority"										"999997"
+
+		"States"																			
+		{	
+			"MODIFIER_STATE_INVISIBLE"					"MODIFIER_STATE_VALUE_ENABLED"		
+		}
+	}	
+
+	"MODIFIER_STATE_COMMAND_RESTRICTED"
+	{									
+		"SerialId"										"102"
+		"Name"											"无法行动"
+		"RemoveOnDeath"									"0"
+		"IsHidden"										"1"
+		"IsPurgable"									"0"
+		"Priority"										"999998"
+
+		"States"																			
+		{	
+			"MODIFIER_STATE_COMMAND_RESTRICTED"			"MODIFIER_STATE_VALUE_ENABLED"		
+		}
+	}	
+	
+	"MODIFIER_STATE_UNSELECTABLE"
+	{									
+		"SerialId"										"103"
+		"Name"											"无法被选取为目标"
+		"RemoveOnDeath"									"0"
+		"IsHidden"										"1"
+		"IsPurgable"									"0"
+		"Priority"										"999998"
+
+		"States"																			
+		{	
+			"MODIFIER_STATE_UNSELECTABLE"				"MODIFIER_STATE_VALUE_ENABLED"		
+		}
+	}	
+
+	"MODIFIER_STATE_INVINCIBLE"
+	{									
+		"SerialId"										"104"
+		"Name"											"无敌"
+		"RemoveOnDeath"									"0"
+		"IsHidden"										"1"
+		"IsPurgable"									"0"
+		"Priority"										"999998"
+
+		"States"																			
+		{	
+			"MODIFIER_STATE_INVINCIBLE"					"MODIFIER_STATE_VALUE_ENABLED"		
+		}
+	}	
+
+	"BUILTIN_MODIFIER_ILLUSION"
+	{									
+		"SerialId"										"105"
+		"Name"											"幻象"
+		"RemoveOnDeath"									"0"
+		"IsHidden"										"1"
+		"IsPurgable"									"0"
+		"Priority"										"999998"
+
+		"Properties"																			
+		{	
+			"MODIFIER_PROPERTY_IS_ILLUSION"				"1"		
+		}
+	}
+
+	"BUILTIN_MODIFIER_ILLUSION_Kill"
+	{									
+		"SerialId"										"106"
+		"Name"											"清除幻象"
+		"RemoveOnDeath"									"0"
+		"IsHidden"										"1"
+		"IsPurgable"									"0"
+		"Priority"										"999999"
+
+		"OnDestroy"
+		{
+			"RunScript"
+			{
+				"Target" "TARGET"
+				"Function" "KillIllusion"
+			}
+		}
+	}
+
+	"BUILTIN_MODIFIER_SUMMONED"
+	{									
+		"SerialId"										"107"
+		"Name"											"召唤物"
+		"RemoveOnDeath"									"0"
+		"IsHidden"										"1"
+		"IsPurgable"									"0"
+		"Priority"										"999998"
+
+		"Properties"																			
+		{	
+			"MODIFIER_PROPERTY_IS_SUMMONED"				"1"		
+		}
+	}
+
+	"BUILTIN_MODIFIER_SUMMONED_Kill"
+	{									
+		"SerialId"										"108"
+		"Name"											"清除召唤物"
+		"RemoveOnDeath"									"0"
+		"IsHidden"										"1"
+		"IsPurgable"									"0"
+		"Priority"										"999999"
+
+		"OnDestroy"
+		{
+			"RunScript"
+			{
+				"Target" "TARGET"
+				"Function" "KillSummoned"
+			}
+		}
+	}
+
+	"BUILTIN_MODIFIER_THINKER"
+	{									
+		"SerialId"										"109"
+		"Name"											"Thinker"
+		"RemoveOnDeath"									"0"
+		"IsHidden"										"1"
+		"IsPurgable"									"0"
+		"Priority"										"9999998"
+
+		"States"																			
+		{	
+			"MODIFIER_STATE_NO_HEALTH_BAR"				"MODIFIER_STATE_VALUE_ENABLED"		
+			"MODIFIER_STATE_INVISIBLE"					"MODIFIER_STATE_VALUE_ENABLED"		
+			"MODIFIER_STATE_COMMAND_RESTRICTED"			"MODIFIER_STATE_VALUE_ENABLED"		
+			"MODIFIER_STATE_UNSELECTABLE"				"MODIFIER_STATE_VALUE_ENABLED"		
+			"MODIFIER_STATE_INVINCIBLE"					"MODIFIER_STATE_VALUE_ENABLED"		
+		}
+	}
+	
+	"BUILTIN_MODIFIER_THINKER_Kill"
+	{									
+		"SerialId"										"112"
+		"Name"											"清除定时器"
+		"RemoveOnDeath"									"0"
+		"IsHidden"										"1"
+		"IsPurgable"									"0"
+		"Priority"										"9999998"
+
+		"OnDestroy"
+		{
+			"RunScript"
+			{
+				"Target" "TARGET"
+				"Function" "KillThinker"
+			}
+		}
+	}
+
+	"BUILTIN_MODIFIER_DEATH"
+	{									
+		"SerialId"										"110"
+		"Name"											"死亡"
+		"RemoveOnDeath"									"0"
+		"IsHidden"										"1"
+		"IsPurgable"									"0"
+		"Priority"										"9999999"
+
+		"States"																			
+		{	
+			"MODIFIER_STATE_COMMAND_RESTRICTED"			"MODIFIER_STATE_VALUE_ENABLED"		
+			"MODIFIER_STATE_NO_HEALTH_BAR"				"MODIFIER_STATE_VALUE_ENABLED"		
+		}
+	}	
+
+	"BUILTIN_MODIFIER_BATTLE_END"
+	{									
+		"SerialId"										"111"
+		"Name"											"战斗结束"
+		"RemoveOnDeath"									"0"
+		"IsHidden"										"1"
+		"IsPurgable"									"0"
+		"Priority"										"9999999"
+
+		"States"																			
+		{	
+			"MODIFIER_STATE_UNSELECTABLE"				"MODIFIER_STATE_VALUE_ENABLED"
+			"MODIFIER_STATE_INVINCIBLE"					"MODIFIER_STATE_VALUE_ENABLED"
+			"MODIFIER_STATE_COMMAND_RESTRICTED"			"MODIFIER_STATE_VALUE_ENABLED"
+			"MODIFIER_STATE_NO_HEALTH_BAR"				"MODIFIER_STATE_VALUE_ENABLED"
+		}
+	}	
+
+    "BUILTIN_MODIFIER_BATTLE_LINEUP"
+	{									
+		"SerialId"										"113"
+		"Name"											"布阵"
+		"RemoveOnDeath"									"0"
+		"IsHidden"										"1"
+		"IsPurgable"									"0"
+		"Priority"										"9999999"
+
+		"States"																			
+		{	
+			"MODIFIER_STATE_UNSELECTABLE"				"MODIFIER_STATE_VALUE_ENABLED"
+			"MODIFIER_STATE_COMMAND_RESTRICTED"			"MODIFIER_STATE_VALUE_ENABLED"
+			"MODIFIER_STATE_NO_HEALTH_BAR"				"MODIFIER_STATE_VALUE_ENABLED"
+		}
+	}	
+    
+    "BUILTIN_MODIFIER_BATTLE_RESULT"
+	{									
+		"SerialId"										"114"
+		"Name"											"战斗结算"
+		"RemoveOnDeath"									"0"
+		"IsHidden"										"1"
+		"IsPurgable"									"0"
+		"Priority"										"9999999"
+
+		"States"																			
+		{	
+			"MODIFIER_STATE_UNSELECTABLE"				"MODIFIER_STATE_VALUE_ENABLED"
+		}
+	}	
+
+    "DROP1"
+	{									
+		"SerialId"										"1001"
+		"Name"											"掉落·白"
+		"RemoveOnDeath"									"0"
+		
+		"OnUnitDeath2"
+		{
+			"Random"
+			{
+				"Condition"								"{Unit.TeamId} == {Caster.TeamId}"
+				
+				"OnSuccess"
+				{
+					"Random"
+					{
+						"Chance"						"0.03f + (({Target.TeamDeathNumber} >= 24 || {Target.TeamTotalNumber} <= 0)? 1f:0f)"
+						
+						"OnSuccess"
+						{
+							"RunScript"
+							{
+								"Function"				"DropItem"
+								"Target"				"UNIT"
+								"Effect"				"Assets/AssetBundle/Effect/diaoluo/bai_dui.prefab"
+								"Power"					"1.5f"
+								"Duration"				"0.5f"
+							}
+
+							"RemoveModifier"
+							{
+								"Target"				"CASTER"
+								"ModifierSerialId"		"1001"
+								"Number"				"1"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	"DROP2"
+	{									
+		"SerialId"										"1002"
+		"Name"											"掉落·蓝"
+		"RemoveOnDeath"									"0"
+		
+		"OnUnitDeath2"
+		{
+			"Random"
+			{
+				"Condition"								"{Unit.TeamId} == {Caster.TeamId}"
+				
+				"OnSuccess"
+				{
+					"Random"
+					{
+						"Chance"						"0.03f + (({Target.TeamDeathNumber} >= 24 || {Target.TeamTotalNumber} <= 0)? 1f:0f)"
+						
+						"OnSuccess"
+						{
+							"RunScript"
+							{
+								"Function"				"DropItem"
+								"Target"				"UNIT"
+								"Effect"				"Assets/AssetBundle/Effect/diaoluo/hun_lan.prefab"
+								"Power"					"1.5f"
+								"Duration"				"0.5f"
+							}
+
+							"RemoveModifier"
+							{
+								"Target"				"CASTER"
+								"ModifierSerialId"		"1002"
+								"Number"				"1"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	"DROP3"
+	{									
+		"SerialId"										"1003"
+		"Name"											"掉落·紫"
+		"RemoveOnDeath"									"0"
+		
+		"OnUnitDeath2"
+		{
+			"Random"
+			{
+				"Condition"								"{Unit.TeamId} == {Caster.TeamId}"
+				
+				"OnSuccess"
+				{
+					"Random"
+					{
+						"Chance"						"0.03f + (({Target.TeamDeathNumber} >= 24 || {Target.TeamTotalNumber} <= 0)? 1f:0f)"
+						
+						"OnSuccess"
+						{
+							"RunScript"
+							{
+								"Function"				"DropItem"
+								"Target"				"UNIT"
+								"Effect"				"Assets/AssetBundle/Effect/diaoluo/hun_zi.prefab"
+								"Power"					"1.5f"
+								"Duration"				"0.5f"
+							}
+
+							"RemoveModifier"
+							{
+								"Target"				"CASTER"
+								"ModifierSerialId"		"1003"
+								"Number"				"1"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	"DROP4"
+	{									
+		"SerialId"										"1004"
+		"Name"											"掉落·橙"
+		"RemoveOnDeath"									"0"
+		
+		"OnUnitDeath2"
+		{
+			"Random"
+			{
+				"Condition"								"{Unit.TeamId} == {Caster.TeamId}"
+				
+				"OnSuccess"
+				{
+					"Random"
+					{
+						"Chance"						"0.03f + (({Target.TeamDeathNumber} >= 24 || {Target.TeamTotalNumber} <= 0)? 1f:0f)"
+						
+						"OnSuccess"
+						{
+							"RunScript"
+							{
+								"Function"				"DropItem"
+								"Target"				"UNIT"
+								"Effect"				"Assets/AssetBundle/Effect/diaoluo/hun_jin.prefab"
+								"Power"					"1.5f"
+								"Duration"				"0.5f"
+							}
+
+							"RemoveModifier"
+							{
+								"Target"				"CASTER"
+								"ModifierSerialId"		"1004"
+								"Number"				"1"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	"DROP5"
+	{									
+		"SerialId"										"1005"
+		"Name"											"掉落·红"
+		"RemoveOnDeath"									"0"
+		
+		"OnUnitDeath2"
+		{
+			"Random"
+			{
+				"Condition"								"{Unit.TeamId} == {Caster.TeamId}"
+				
+				"OnSuccess"
+				{
+					"Random"
+					{
+						"Chance"						"0.03f + (({Target.TeamDeathNumber} >= 24 || {Target.TeamTotalNumber} <= 0)? 1f:0f)"
+						
+						"OnSuccess"
+						{
+							"RunScript"
+							{
+								"Function"				"DropItem"
+								"Target"				"UNIT"
+								"Effect"				"Assets/AssetBundle/Effect/diaoluo/hun_hong.prefab"
+								"Power"					"1.5f"
+								"Duration"				"0.5f"
+							}
+
+							"RemoveModifier"
+							{
+								"Target"				"CASTER"
+								"ModifierSerialId"		"1005"
+								"Number"				"1"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,188 @@
+------------------------------------------
+操作参数
+
+包括以下属性
+{
+	Caster			施法单位
+	Ability			技能,攻击事件不可用
+	Modifier		Modifeir,只在Modifier事件中可用
+	Target			目标
+	Point			位置,技能释放位置,或弹道位置
+	Attacker		进攻方
+	Unit			触发单位或根据事件变化
+
+	*不同事件可能包含其他属性
+}
+
+------------------------------------------
+在操作中用使用参数
+格式:
+如果参数是数值:{属性名.子属性.子属性}
+如果参数是列表:
+list列表: {属性名[index]}		index从0开始
+dict列表: {属性名['name']}		name为属性名
+
+
+例如:
+Modifier计时器触发
+"OnIntervalThink"
+{
+	对目标造成伤害,伤害类型为技能,伤害数值为施法者当前攻击的50%加上技能自定义参数"damage_ratio"
+	"Damage"
+	{
+		"Target" 	"TARGET"
+		"Type" 		"DAMAGE_TYPE_MAGICAL"
+		*旧的表达式		"Damage" "%caster_currAttack * 0.5 + %ability_para1"
+		*替换为			"Damage" "{Caster.CurrAtt.Attack}f * 0.5f + {Ability.SpecialValues['damage_ratio']}f"
+	}
+}
+
+<Target.InitAtt.Hp>
+
+受到攻击伤害时一定几率反弹10%伤害
+"OnTakeAttackDamage"
+{
+	随机结果
+	"Random"
+	{
+		*旧的表达式		"Chance" "%ability_para1 * (%target_currLucky / ( %target_currLucky + 500 ) * 1.5 + 1 ) "  修改为
+		*替换为			"Chance" "{Ability.SpecialValues['damage_ratio']} * ({Target.CurrAtt.Lucky} / ( {Target.CurrAtt.Lucky} + 500 ) * 1.5 + 1 ) "
+
+		"Success"
+		{
+			"Damage"
+			{
+				...
+			}
+		}
+	}
+}
+
+*表达式中可用的运算包括 + - * /等基础运算符
+*可用函数>函数库文件夹下
+
+*表达式中的判断格式为
+条件表达式 ? 满足 : 未满足
+
+条件表达式可用的比较符号为  >  <  >=  <=  ==  !=  !
+只要比较结果不为0就算满足
+
+例如:
+
+幸运大于1000造成200点伤害,否则造成100点伤害
+"Damage" "{Caster.CurrAtt.Lucky} > 1000 ? 200 : 100"
+目标不是幻象,治疗100生命值
+"HealAmount" "!{Target.IsIllusion} ? 100 : 0"
+
+------------------------------------------
+EventData中的参数拥有以下属性
+*一般情况 Is开头的属性为bool类型,结果为true或false,不能用于运算,只能用于比较
+
+Caster包括
+{
+	Type						单位类型(=>UnitType)
+	TraitType					特性(=>TraitType)
+	AttackCapability			攻击类型(=>UnitAttackCapabilityType)
+	TeamId						队伍id(目前1为友方,2为地方)
+	Level						等级
+	BattleScore					战力
+	InitAtt						初始属性(->UnitAttribute)
+	CurrAtt						当前属性(->UnitAttribute)
+	StatisticsData				统计数据(->UnitStatisticsData)
+	CurrNode					当前格子(->BattleNode)
+	IsAlive						生命值大于0
+	IsDeadState					死亡标记
+	Master						幻象或召唤物主人
+    TeamDeathNumber             团队死亡人数(不含分身)
+    TeamKillNumber              团队击杀人数(不含分身)
+    IsIllusion					是否为幻象
+	IsSummoned					是否为召唤物
+    IsMoveDisabled              禁止移动
+    IsAttackDisabled            禁止普攻
+    IsActivatesAbilityDisabled  禁用主动技能
+    IsPassivesAbilityDisabled   禁用被动技能
+    IsStunned                   晕眩
+    IsBuffImmune                免疫Buff类型Modifier
+    IsDebuffImmune              免疫Debuff类型Modifier
+    IsNebuffImmune              免疫Nebuff类型Modifier
+    IsAllModifierImmune         免疫所有Modifier
+    IsInvisible                 隐身
+    IsNoHealthBar               隐藏血条
+    IsInvincible                无敌
+    IsResticted                 无法行动
+    IsUnselectable              无法选为目标
+    ['']                        自定义参数
+}
+
+Ability包括
+{
+	SerialId					流水号id
+	AbilityId					技能id
+	Name						名字
+	SpecialValues				自定义参数,SpecialValues['参数名']
+}
+
+Modifier包括
+{
+	SerialId					流水号id
+	Name						名字
+}
+
+BattleNode格子包括
+{
+	X							格子x索引(从左往右,第一格为0)
+	Y							格子y索引(从下网上,第一格为0)
+	IsWalkable					是否可通过
+	WorldPosition				世界坐标(.x,.y,.z)
+}
+
+UnitAttribute属性包括
+{
+	Attack						攻击
+	Defense						防御
+	MaxHp						最大生命值
+	Hp							当前生命值
+	AttackSpeed					普攻速度
+	MoveSpeed					移动速度
+	RotateSpeed					转身速度
+	CritOdds					暴击几率
+	CritDamage					暴击伤害
+	DodgeOdds					闪避几率
+	HitOdds						命中几率
+	DefenseRatio				防御基数
+	CritResistance				暴伤抗性
+	AbilityCDBonus				技能冷却提高
+	PhysicalArmorBreak			破甲
+	HpSteal						生命吸取
+	AttackNodeRange			    攻击距离
+	DamageOutBonus				输出提高
+	AttackDamageOutBonus		普攻输出提高
+	AbilityDamageOutBonus		技能输出提高
+	DamageInBonus				承受伤害提高
+	AttackDamageInBonus			承受普攻伤害提高
+	AbilityDamageInBonus		承受技能伤害提高
+	HealOutBonus				治疗输出提高
+	HealInBonus					承受治疗提高
+    FinalDamageOutBouns         最终输出伤害加成
+    FinalDamageInBouns          最终承受伤害加成
+	Mana						当前法力值
+	MaxMana						最大法力值
+	ManaRegen					法力值恢复速度
+	Scale						缩放
+	TraitDamageOutBouns			对特质伤害加成,TraitDamageOutBouns['Tenacious']
+}
+
+UnitStatisticsData统计数据包括
+{
+	AttackDamageOut				普攻输出伤害
+	AbilityDamageOut			技能输出伤害
+	TotalDamageOut				总输出伤害
+	AttackDamageIn				承受普攻伤害
+	AbilityDamageIn				承受技能伤害
+	TotalDamageIn				承受总伤害
+	HealOut						治疗输出
+	HealIn						承受治疗
+	KillCount					击杀总数量
+	KillIllusionCount		    击杀幻象数量
+	KillSummonedCount		    击杀召唤物数量
+}

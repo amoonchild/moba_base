@@ -1,0 +1,248 @@
+
+技能库
+"LiaoZhaiAbilities"
+{
+	版本号
+	"Version"		"1"
+	
+	测试技能1
+	"test_ability_1000"
+	{
+		"SerialId"									"1000"										技能流水号id
+		"Id"							 			"1"											技能id
+		"Name"							 			"技能1"										技能名字
+		"AbilityBehavior"				 			"ABILITY_BEHAVIOR_NONE"						技能行为(=>AbilityBehavior)
+
+		"AbilityUnitTargetTeams"					"UNIT_TARGET_TEAM_NONE"						目标队伍
+		"AbilityUnitTargetTypes"					"UNIT_TARGET_NONE"							目标类型
+		"AbilityUnitTargetFlags"					"UNIT_TARGET_FLAG_NONE"						目标筛选
+		"AbilityUnitTargetExcludedFlags"			"UNIT_TARGET_FLAG_NONE"						目标排除筛选
+		"AbilityUnitTargetSort"						"UNIT_TARGET_SORT_NONE"						排序
+		"AbilityUnitTargetTraits"					"1|2"										满足特质
+		"AbilityUnitTargetExcludedTraits"			"99"										排除特质
+		"AbilityUnitTargetModifierGroups"			"100001"									满足Modifier组
+		"AbilityUnitTargetExcludedModifierGroups"	"100002|10000"								排除Modifier组
+		"AbilityUnitTargetMaxNumber"				"0"											最大数量
+		"AbilityUnitTargetRandom"					"0"											在满足的目标中随机选取
+
+		*行为标记为ABILITY_BEHAVIOR_HIDDEN时,以下参数无效
+		"ShowIcon"									"1"											显示技能图标
+		"ShowTipInfo"								"1"											显示tip信息
+		"ShowCooldown"								"1"											显示技能cd
+		"ShowPrompt"								"1"											显示技能释放提示
+
+		"AbilityIconName"							""											技能图标路径
+		"AbilityCastRange"				 			"500"										施法距离,优先于格子
+		"AbilityCastNodeRange"				 		"5"											施法距离(格子)
+		"AbilityCastRangeBuffer"		 			"750"										施法缓冲距离,当施法开始后,如果目标超过施法缓冲距离,这次施法会被取消,优先于格子
+		"AbilityCastNodeRangeBuffer"		 		"7"											施法缓冲距离(格子),当施法开始后,如果目标超过施法缓冲距离,这次施法会被取消
+		"AbilityDuration"				 			"3.0"										施法时间
+		"AbilityCastPoint"							"0.5"										施法前摇
+		"AbilityChannelTime"			 			"2.0"										引导时间(前摇结束后开始)
+		"AbilityCastAnimationPoint"			 		"0.2"										施法动作延迟播放时间
+		"AbilityCastAnimation"			 			"ACT_CAST_ABILITY_1"						施法动作
+		"AbilityFirstCooldown"						"0.0"										战斗开始首次冷却时间
+		"AbilityCooldown"				 			"0.0"										冷却时间
+		"AbilitySharedCooldown"			 			"cd_group_1"								共享冷却组,技能进入冷却时会同组技能一起进入冷却
+		"AbilityCostMana"							"0"											消耗法力值
+		
+		"Precache"																				需要预先载入的资源
+		{
+			
+		}
+		
+		自定义参数,固定值
+		"AbilitySpecial"
+		{
+			"1"
+			{
+				"jinengcanshu1" "5"
+			}
+		}
+		
+		技能包含的Modifier
+		"Modifiers"
+		{				
+			"modifier_test"															
+			{
+				"SerialId"									"0"								Modifier序列号
+				"Name"										"测试Modifier"					Modifier名字
+				
+				"Passive"          							"0"								是否为被动,被动Modifier在技能启用时生效,技能禁用时删除
+				"RemoveOnDeath"								"1"								死亡时销毁
+				"IsHidden"									"0"								是否隐藏,不在界面上显示
+				"IsBuff"									"0"								是否为增益buff
+				"IsDebuff"									"0"								是否为减益buff
+				"IsNebuff"									"0"								是否为中立buff
+				"IsShowPrompt"								"0"								是否显示buff获得提示(IsHidden=1时有效)
+				
+				"IsPurgable"								"0"								是否可被驱散
+				"PurgableLevel"								"0"								Modifier需求驱散等级,用于驱散
+				
+				"Duration"         							"10"							持续时间
+				"ThinkInterval"         					"10"							定时器间隔时间
+
+				"ModifierGroup"								"组1"							组
+				"ModifierGroupStackType"					"MODIFIER_GROUP_STACK_IGNORE"	同组叠加类型(=>ModifierGroupStackType)
+				"ModifierGroupStackCount"					"0"								同组叠加数量上限
+				
+				"OverrideAnimation"							"ACT_IDLE"						覆盖单位动作(=>UnitActType)
+				
+				"Priority"                     				"0"								优先级,数字越大优先级越高,优先级高的Modifier的State会覆盖优先级低的
+
+				"AuraSerialId"								"0"								光环Modifier序列号
+				
+				"AuraRadius"								"100"							半径,优先于格子
+				"AuraNodeRange"								"1"								格子范围
+				"AuraTargetTeams"							"UNIT_TARGET_TEAM_NONE"			目标队伍
+				"AuraTargetTypes"							"UNIT_TARGET_NONE"				目标类型
+				"AuraTargetFlags"							"UNIT_TARGET_FLAG_NONE"			目标筛选
+				"AuraTargetExcludedFlags"					"UNIT_TARGET_FLAG_NONE"			目标排除筛选
+				"AuraTargetTraits"							"1|2"							满足特质
+				"AuraTargetExcludedTraits"					"99"							排除特质
+				"AuraTargetModifierGroups"					"100001"						满足Modifier组
+				"AuraTargetExcludedModifierGroups"			"100002|10000"					排除Modifier组
+				"AuraTargetSort"							"UNIT_TARGET_SORT_NONE"			排序
+				"AuraTargetMaxNumber"						"1"								排序
+				
+				"AuraApplyToCaster"							"1"								光环是否作用与施法者
+				
+				"Precache"																	预载资源
+				{
+				
+				}
+				
+				Modifier属性,对持有者生效(=>ModifierPropertyType),在Modifier销毁时扣除
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACK_BONUS"		"500"							攻击增加500
+					"MODIFIER_PROPERTY_LUCKY_BONUS"			"1000"							幸运增加1000
+				}
+				
+				Modifier状态,对持有者生效,覆盖之前的同枚举状态(=>ModifierStateType),在Modifier销毁时设为MODIFIER_STATE_VALUE_NO_ACTION
+				一个状态同一时间只能由一个Modifier控制,根据优先级Priority,优先级小的Modifier无法操作持有者的状态
+				"States"
+				{
+					"MODIFIER_STATE_BUFF_IMMUNE" 			"MODIFIER_STATE_VALUE_DISABLED"	禁用免疫Buff状态
+					"MODIFIER_STATE_STUNNED" 				"MODIFIER_STATE_VALUE_ENABLED"	启用晕眩状态
+				}
+				
+				免疫Modifier组,在Modifier销毁时清空
+				"ImmuneModifierGroups"
+				{
+					"1"										"group_1"
+				}
+
+				---------------------------------------------
+				Modifier事件,CASTER为Modifier来源,TARGET为Modifier持有者
+				
+				"OnCreated"								创建
+				"OnIntervalThink"						计时器生效
+				"OnPurged"								被驱散
+				"OnDestroy"								销毁(被驱散不会触发)
+				
+				---------------------------------------------
+				"OnDeath"								拥有者死亡
+				"OnRespawn"								拥有者重生
+				"OnKilledUnit"							拥有者杀死其他单位
+				"OnUnitDeath"							任意单位死亡时
+				
+				---------------------------------------------
+				"OnAbilityPhaseStart"					技能前摇开始
+				"OnAbilityPhaseInterrupted"				技能前摇被打断
+				"OnAbilityStart"						技能前摇结束
+				"OnChannelSuccess"						技能引导成功
+				"OnChannelInterrupted"					技能引导被打断
+				"OnChannelFinish"						技能引导结束
+				"OnAbilityFinish"						技能结束
+
+				---------------------------------------------
+				Parms['finalDamage']	最终伤害
+
+				"OnBeforeDealDamage"					造成伤害前
+				"OnBeforeDealAttackDamage"				造成攻击伤害前
+				"OnBeforeDealAttackCritDamage"			造成攻击暴击伤害前
+				"OnBeforeDealAttackNoCritDamage"		造成攻击非暴击伤害前
+				"OnBeforeDealAbilityDamage"				造成技能伤害前
+				"OnBeforeDealAbilityCritDamage"			造成技能暴击伤害前
+				"OnBeforeDealAbilityNoCritDamage"		造成技能非暴击伤害前
+
+				"OnBeforeTakeDamage"					受到伤害前
+				"OnBeforeTakeAttackDamage"				受到攻击伤害前
+				"OnBeforeTakeAttackCritDamage"			受到攻击暴击伤害前
+				"OnBeforeTakeAttackNoCritDamage"		受到攻击非暴击伤害前
+				"OnBeforeTakeAbilityDamage"				受到技能伤害前
+				"OnBeforeTakeAbilityCritDamage"			受到技能暴击伤害前
+				"OnBeforeTakeAbilityNoCritDamage"		受到技能非暴击伤害前
+				
+				---------------------------------------------
+				Parms['finalDamage']	最终伤害
+				Parms['realDamage']		真实伤害
+				Parms['excessDamage']	过量伤害
+				
+				"OnDealDamage"							造成伤害后
+				"OnDealAttackDamage"					造成攻击伤害后
+				"OnDealAttackCritDamage"				造成攻击暴击伤害后
+				"OnDealAttackNoCritDamage"				造成攻击非暴击伤害后
+				"OnDealAbilityDamage"					造成技能伤害后
+				"OnDealAbilityCritDamage"				造成技能暴击伤害后
+				"OnDealAbilityNoCritDamage"				造成技能非暴击伤害后
+
+				"OnTakeDamage"							受到伤害后
+				"OnTakeAttackDamage"					受到攻击伤害后
+				"OnTakeAttackCritDamage"				受到攻击暴击伤害后
+				"OnTakeAbilityDamage"					受到技能伤害后
+				"OnTakeAbilityCritDamage"				受到技能暴击伤害后
+				
+				---------------------------------------------
+				"OnMiss"								未命中目标后
+				"OnAttackMiss"							攻击未命中目标后
+				"OnAbilityMiss"							技能未命中目标后
+				
+				"OnDodge"								闪避后
+				"OnDodgeAttack"							闪避攻击后
+				"OnDodgeAbility"						闪避技能后
+				
+				---------------------------------------------
+				Parms['finalHeal']		最终治疗
+
+				"OnBeforeDealHeal"						造成治疗前				
+				"OnBeforeTakeHeal"						受到治疗前
+				
+				---------------------------------------------
+				Parms['finalHeal']		最终治疗
+				Parms['realHeal']		真实治疗
+				Parms['excessHeal']		过量治疗
+
+				"OnTakeHeal"							受到治疗后				
+				"OnDealHeal"							造成治疗后
+
+				---------------------------------------------
+				Parms['finalMana']		最终数值
+				Parms['realMana']		真实数值
+				Parms['excessMana']		过量数值
+
+				"OnManaIncrease"						法力值增加
+				"OnManaReduce"							法力值减少
+				
+				---------------------------------------------
+				"OnAttackPhaseStart"					攻击开始
+				"OnAttackStart"							攻击前摇结束
+				"OnAttackFinish"						攻击结束
+			}
+		}
+		
+		---------------------------------------------
+		技能事件,CASTER为技能持有者
+		
+		"OnOwnerDied"						拥有者死亡后
+		"OnOwnerSpawned"					拥有者出生后,只会响应一次
+		"OnAbilityPhaseStart"				前摇开始
+		"OnAbilityPhaseInterrupted"			前摇被打断
+		"OnAbilityStart"					前摇结束
+		"OnChannelSucceeded"				引导成功
+		"OnChannelInterrupted" 				引导被打断
+		"OnChannelFinish"					引导结束
+		"OnAbilityFinish"					施法结束
+	}
+}

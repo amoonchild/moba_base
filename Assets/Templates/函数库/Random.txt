@@ -1,0 +1,21 @@
+
+//
+// 摘要:
+//     Returns a random integer number between min [inclusive] and max [exclusive] (Read
+//     Only).
+//
+// 参数:
+//   min:
+//
+//   max:
+public static int Range(int min, int max);
+//
+// 摘要:
+//     Returns a random float number between and min [inclusive] and max [inclusive]
+//     (Read Only).
+//
+// 参数:
+//   min:
+//
+//   max:
+public static float Range(float min, float max);

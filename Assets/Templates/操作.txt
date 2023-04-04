@@ -1,0 +1,553 @@
+------------------------------------------
+操作目标
+
+单个目标
+"Target"			"CASTER"            - 初始施法者
+"Target"			"TARGET"            - 目标
+"Target"			"POINT"             - 目标当前坐标
+"Target"			"NODE"              - 目标当前格子
+"Target"			"ATTACKER"          - 进攻单位
+"Target"			"UNIT"              - 事件触发单位,或生效单位
+"Target"			"THINKER"           - 定时器本身
+
+多目标
+"Target"
+{
+	"Center"    				查找中心						CASTER,TARGET,POINT,NODE,ATTACKER,UNIT,THINKER
+	"Radius"					半径							默认-1,不使用这个参数
+	"NodeRange"					格子范围						默认-1,不使用这个参数
+	"Teams"						阵营							组合(=>AbilityUnitTargetTeam)
+	"Types"						单位类型						组合(=>AbilityUnitTargetType)
+	"Flags"						满足标记						组合(=>AbilityUnitTargetFlag)
+	"ExcludedFlags"				排除标记						组合(=>AbilityUnitTargetFlag)
+	"Traits"					满足特质						组合(=>TraitType)
+	"ExcludedTraits"			排除特质						组合(=>TraitType)
+	"ModifierGroups"			满足Modifier组					组合,字符串
+	"ExcludedModifierGroups"	排除Modifier组					"gourp1|gourp2"
+	"Sort"						排序							(=>AbilityUnitTargetSort)
+	"MaxNumber"					最大数量						默认-1,没有上限
+	"Random"					在满足的目标中随机选取			 默认0,不随机
+
+	*查找顺序
+	*根据范围选出目标
+	*根据阵营,类型,标记,特质,Modifier组进行筛选
+	*排序
+	*排除超过目标数量的
+}
+
+"Target"
+{
+	"NodeX"			"0"
+	"NodeY"			"0"
+}
+
+------------------------------------------
+事件参数
+
+包括以下属性
+{
+	Caster			施法单位
+	Ability			技能,攻击事件不可用
+	Modifier		Modifeir,只在Modifier事件中可用
+	Target			目标
+	Point			位置,技能释放位置,或弹道位置
+	Node			格子
+	Attacker		进攻方
+	Unit			触发单位或根据事件变化
+	Thinker			定时器
+
+	*不同事件可能包含其他参数
+	Parms			可选属性(Parms['参数名'])
+}
+
+------------------------------------------
+对多个目标执行某些操作,这些目标类型必须是单位(UNIT)
+"ActOnTargets"
+{
+	"Target"						目标
+	{
+	
+	}
+	
+	"Action"						操作
+	{
+		
+	}
+}
+
+------------------------------------------
+延迟生效,不会受死亡影响
+"DelayedAction"
+{
+	"Delay"						 	延迟时间
+	"Action"						操作
+	{
+		
+	}
+}
+
+------------------------------------------
+随机,Chance和Condition二选一
+"Random"
+{
+	"Chance"						几率,0-1
+	"Condition"						满足条件
+	
+	"OnSuccess"						成功后的操作
+	{
+	
+	}
+	
+	"OnFailure"						失败后的操作
+	{
+	
+	}
+}
+
+------------------------------------------
+启用技能
+"EnableAbility"
+{
+	"Target"						目标
+	"AbilityId"						技能id
+}
+
+------------------------------------------
+禁用技能
+"DisableAbility"
+{
+	"Target"						目标
+	"AbilityId"						技能id
+}
+
+------------------------------------------
+添加Modifier
+"ApplyModifier"
+{
+	"Target"						目标
+	"ModifierSerialId"				Modifier序列号
+	"Duration"						Modifier持续时间,不填写默认使用Modifier自身的时间,-1为永久
+}
+
+------------------------------------------
+移除Modifier
+"RemoveModifier"
+{
+	"Target"						目标
+	"ModifierSerialId"				Modifier序列号
+}
+
+------------------------------------------
+驱散Modifier
+"PurgeModifier"
+{
+	"Target"						目标
+	"ModifierGroup"					Modifier组
+	"Buff"							驱散增益
+	"Debuff"						驱散减益
+	"Nebuff"						驱散中立buff
+	"Level"							驱散等级,小于该等级的会被驱散,默认-1,无视驱散等级
+	"MaxCount"						最大驱散数量,大于1随机驱散,默认-1,驱散所有符合的Modifier
+}
+
+------------------------------------------
+创建Thinker(定时器),相当于创建一个单位并添加一个Modifier,该单位不在战斗单位列表中,属于第三方隐形单位,不会受任何其他效果影响
+"CreateThinker"
+{
+	"Target"						目标
+	"ModifierSerialId"				Modifier序列号
+	"Duration"						持续时间
+}
+
+------------------------------------------
+造成一次伤害
+"Damage"
+{
+	"Target"						目标
+	"Type"							类型
+	"Flags"							标志
+	"Damage"						伤害值
+	"DefenseIgnore"					忽略防御参数
+	"CleaveDamage"					多个目标时平摊伤害
+	"CritOdds"						暴击率修正值
+	"HitOdds"						命中率修正值
+	
+	Type - 指定的类型(DamageType)
+	DAMAGE_TYPE_PHYSICAL          	攻击伤害,使用攻击伤害公式
+	DAMAGE_TYPE_MAGICAL            	技能伤害,使用技能伤害公式
+	DAMAGE_TYPE_HP_REMOVAL			生命移除,直接增加或减少
+
+	Flags - 标志(组合=>DamageFlag)
+	DAMAGE_FLAG_NO_DIRECTOR_EVENT	不会触发和本次伤害有关的事件
+}
+
+------------------------------------------
+治疗
+"Heal"
+{
+	"Target"						目标
+	"Type"							类型
+	"Flags"							标志
+	"HealAmount"					治疗量
+	
+	Type - 指定的类型(HealType)
+	HEAL_TYPE_NORMAL          		普通治疗,使用治疗公式
+	HEAL_TYPE_HP_REMOVAL            生命移除,直接增加或减少
+
+	Flags - 标志(组合=>DamageFlag)
+	DAMAGE_FLAG_NO_DIRECTOR_EVENT	不会触发和本次治疗有关的事件
+}
+
+------------------------------------------
+改变攻击目标
+"ChangeAttackTarget"
+{
+	"Target"						被改变者(攻击方)
+	"AttackTo"						强制攻击目标(被攻击方)
+	"Immediate"						是否打断当前动作，立刻执行(0否, 1是)
+}
+
+------------------------------------------
+恢复法力值
+"RecoverMana"
+{
+	"Target"						目标
+	"Mana"							法力值
+}
+
+------------------------------------------
+使单位瞬移到离目标最近的可通过的格子
+"Blink"
+{
+	"Target"						单位
+	"BlinkToTarget"					目标
+}
+
+------------------------------------------
+交换格子,必须是两个单位,target或swaptarget死亡不影响该操作，可以将异灵与尸体交换位置（或两个尸体交换位置）
+"SwapNode"
+{
+	"Target"						目标1
+	"SwapTarget"					目标2
+}
+
+------------------------------------------
+复活单位
+"RespawnUnit"
+{
+	"Target"						目标
+	"Hp"							复活后的生命值 
+}
+
+------------------------------------------
+切换模型
+"SwitchModel"
+{
+	"Target"						目标
+	"ModelIndex"					模型索引
+}
+
+------------------------------------------
+召唤单位
+"SpawnUnit"
+{
+	"Target"						召唤位置
+	"UnitId"						单位id
+	"SkinId"						皮肤id
+	"UnitCount"						召唤单位量
+	"Duration"						持续时间,默认-1,永久
+	"Attributes"
+	{
+		"Attack"
+		"Defense"
+		"MaxHp"
+		"Hp"
+		"AttackSpeed"
+		"MoveSpeed"
+		"RotateSpeed"
+		"CritOdds"
+		"CritDamage"
+		"DodgeOdds"
+		"HitOdds"	
+		"DefenseRatio"				
+		"CritResistance"			
+		"AbilityCDBonus"
+		"PhysicalArmorBreak"
+		"HpSteal"
+		"AttackNodeRange"
+		"DamageOutBonus"
+		"DamageInBonus"
+		"AttackDamageOutBonus"
+		"AttackDamageInBonus"
+		"AbilityDamageOutBonus"
+		"AbilityDamageInBonus"
+		"HealOutBonus"
+		"HealInBonus"
+		"FinalDamageOutBouns"
+		"FinalDamageInBouns"
+		"Mana"
+		"MaxMana"
+		"ManaRegen"
+		"Scale"
+		"Trait1DamageOutBouns"
+		"Trait2DamageOutBouns"
+		"Trait3DamageOutBouns"
+		"Trait4DamageOutBouns"
+		"Trait5DamageOutBouns"
+		"Trait6DamageOutBouns"
+		"Trait99DamageOutBouns"
+	}
+	
+	"Ability"						召唤单位附带技能
+	{
+		"1"			"序列号"
+	}
+
+	"OnSpawn"						召唤成功后操作
+	{
+	
+	}
+}
+
+------------------------------------------
+召唤幻象
+"SpawnIllusion"
+{
+	"Target"						幻象复制的单位
+	"UnitCount"						召唤单位量
+	"Duration"						持续时间,默认-1,永久
+	"Attributes"
+	{
+		"Attack"
+		"Defense"
+		"MaxHp"
+		"Hp"
+		"AttackSpeed"
+		"MoveSpeed"
+		"RotateSpeed"
+		"CritOdds"
+		"CritDamage"
+		"DodgeOdds"
+		"HitOdds"	
+		"DefenseRatio"				
+		"CritResistance"			
+		"AbilityCDBonus"
+		"PhysicalArmorBreak"
+		"HpSteal"
+		"AttackNodeRange"
+		"DamageOutBonus"
+		"DamageInBonus"
+		"AttackDamageOutBonus"
+		"AttackDamageInBonus"
+		"AbilityDamageOutBonus"
+		"AbilityDamageInBonus"
+		"HealOutBonus"
+		"HealInBonus"
+		"FinalDamageOutBouns"
+		"FinalDamageInBouns"
+		"Mana"
+		"MaxMana"
+		"ManaRegen"
+		"Scale"
+		"Trait1DamageOutBouns"
+		"Trait2DamageOutBouns"
+		"Trait3DamageOutBouns"
+		"Trait4DamageOutBouns"
+		"Trait5DamageOutBouns"
+		"Trait6DamageOutBouns"
+		"Trait99DamageOutBouns"
+	}
+	
+	"Ability"						幻象附带技能
+	{
+		"1"			"序列号"
+	}
+
+	"OnSpawn"						召唤成功后操作
+	{
+	
+	}
+}
+
+------------------------------------------
+线性投射物
+"LinearProjectile"
+{
+	"Target"						目标
+	"EffectName"					特效资源路径
+	"MoveSpeed"						弹道速度
+	"Distance"						最远距离
+	"StartRadius"					起始半径
+	"EndRadius"						结束半径
+	"HasForntalCone"				是否为锥形,忽略前后半圆
+		
+	"TargetTeams"					目标队伍
+	"TargetTypes"					目标类型
+	"TargetFlags"					目标筛选
+	"TargetExcludedFlags"			目标排除筛选
+	"TargetTraits"					满足特质
+	"TargetExcludedTraits"			满足特质
+	"TargetModifierGroups"			满足Modifier组
+	"TargetExcludedModifierGroups"	排除Modifier组
+	
+	"OnProjectileHitUnit"			击中目标
+	{
+		"DeleteOnHit"				击中第一个目标后结束并删除
+	}
+	
+	"OnProjectileFinish"			投射物结束
+	{
+		
+	}
+}
+
+------------------------------------------
+跟踪投射物
+"TrackingProjectile"
+{
+	"Target" 						目标
+	"MoveSpeed" 					弹道速度
+	"EffectName" 					特效资源路径
+	"EffectStartPoint"				特效起始挂点
+	
+	"OnProjectileHitUnit"			击中目标
+	{
+		
+	}
+}
+
+------------------------------------------
+播放特效,不跟随
+可以对死亡target生效，但如果目标模型已删除，找不到挂点则特效无法播放
+"FireEffect"
+{
+	"Target"						目标
+	"EffectName"					特效资源路径
+	"EffectAttachPoint"				特效挂点
+    "IsAttachRot"				    同步挂点旋转
+    "IsAttachTargetScale"		    同步目标缩放
+}
+
+------------------------------------------
+播放特效并跟随
+在Modifier的OnCreated事件中使用AttachEffect播放的特效会在Modifier被删除时自动销毁
+可以对死亡target生效，但如果目标模型已删除，找不到挂点则特效无法播放；挂上之后目标模型删除，则因为挂点的删除特效也会删除
+"AttachEffect"
+{
+	"Target"						目标
+	"EffectName"					特效资源路径
+	"EffectAttachPoint"				特效挂点
+	"IsAttachPos"				    跟随挂点移动
+    "IsAttachRot"				    跟随挂点旋转
+    "IsAttachTargetScale"		    跟随目标缩放
+	"IsKeepAttach"					是否跟随移动
+}
+
+------------------------------------------
+播放音效
+可以对死亡target生效
+"FireSound"
+{
+	"Target"                ""      目标
+    "AttachPointName"       ""      音效挂点
+    "SoundName"             ""      音效资源名
+    "VolumeInSoundGroup"    "1"     在音效组内的音量
+    "Loop"                  "0"     是否循环
+    "Time"                  "0"     起始时间
+    "Pitch"                 "1"     音调
+    "FadeInSeconds"         "0"     淡入时间
+}
+
+------------------------------------------
+播放音效并跟随
+在Modifier的OnCreated事件中使用AttachSound播放的音效会在Modifier被删除时自动销毁
+可以对死亡target生效
+"AttachSound"
+{
+	"Target"                ""      目标
+    "AttachPointName"       ""      音效挂点
+    "IsAttachPos"           "0"		是否跟随挂点
+    "SoundName"             ""      音效资源名
+    "VolumeInSoundGroup"    "1"     在音效组内的音量
+    "Loop"                  "0"     是否循环
+    "Time"                  "0"     起始时间
+    "Pitch"                 "1"     音调
+    "FadeInSeconds"         "0"     淡入时间
+}
+
+------------------------------------------
+屏幕震动
+"ShakeScreen"
+{
+	"Duration"						持续时间, The duration of the tween
+	"Strength"						震动强度, The shake strength on each axis
+	"Vibrato"						默认10, Indicates how much will the shake vibrate
+	"Randomness"					默认90, Indicates how much the shake will be random (0 to 180 - values higher than 90 kind of suck, so beware). Setting it to 0 will shake along a single direction.
+	"Snapping"						默认0, If 1 the tween will smoothly snap all values to integers
+	"FadeOut"						默认1, If 1 the shake will automatically fadeOut smoothly within the tween's duration,
+}
+
+"ShakeScreen"
+{
+	"Duration"		"2"
+	"Strength"		"0.5"
+	"Vibrato"		"10"
+	"Randomness"	"90"
+	"Snapping"		"0"
+	"FadeOut"		"1"
+}
+
+------------------------------------------
+改变技能剩余冷却时间
+如果技能不处于冷却中,会触发冷却
+"ChangeAbilityCooldown""
+{
+	"Target"						目标
+	"AbilityId"						技能id
+	"TimeBouns"						改变时间
+}
+
+------------------------------------------
+执行脚本代码
+"RunScript"
+{
+	开启护盾,在Modifier的OnCreated调用,不同Modifier护盾不叠加,一个单位只能拥有一个护盾,后触发的Modifier会顶替先触发的
+	"Function"						"StartShield"	
+	"Shield"						"100"			    护盾吸收伤害
+    
+
+    关闭护盾,在Modifier的OnDestroy或OnPurged调用
+	"Function"						"EndShield"		
+
+
+    检测护盾,在受到伤害后调用,恢复等额血量
+	"Function"						"CheckShield"	
+
+
+    调整伤害,受到伤害前有效
+	"Function"						"ChangeFinalDamage"
+    "FinalDamage"                   ""
+
+
+     调整治疗,受到治疗前有效
+	"Function"						"ChangeFinalHeal"
+    "FinalHeal"                  	""
+	
+	物品掉落特效
+	"Function"						"DropItem"
+	"Effect"						"Assets/AssetBundle/Effect/diaoluo/bai_dui.prefab"
+	"Power"							"1.5f"
+	"Duration"						"0.5f"
+}
+
+------------------------------------------
+设置临时变量
+"SetValue"
+{
+	"Target"						"CASTER"			目标（变量将和目标绑定）
+	"Key"							"x"					变量名
+	"Value"							"{Caster['x']} + 1"	表达式，该例子中是自身+1
+}
+
+"SetTeamValue"
+设置团队变量

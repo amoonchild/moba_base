@@ -1,0 +1,89 @@
+
+模型库
+"LiaozhaiModels"
+{
+	版本号
+	"Version"		"1"
+
+	模型10010101
+	"model_10010101"
+	{
+		
+		"SerialId" 										"1001011"															流水号id
+		"HeadIcon"										"Assets/AssetBundle/UISprite/CardIcon2/102901_Pic.png"				头像
+		"Model" 										"Assets/AssetBundle/Model/1001011.prefab"							prefab资源
+		"ModelScale" 									"0.75"																缩放
+		
+		预载入资源
+		"Precache"
+		{
+			"Model" 									"Assets/AssetBundle/Model/1001011.prefab"
+			"Effect" 									"Assets/AssetBundle/Effect/Common/beiji.prefab"
+		}
+		
+		攻击列表
+		"Attack"
+		{
+			第一个攻击
+			"1"
+			{
+				"BaseAttackInterval" 					"2"																	基础攻击间隔(秒)
+				"AttackAnimation" 						"ACT_ATTACK1"														播放动作(=>UnitAnimationType)
+				"AttackAnimationDuration"				"1"																	动作时长
+				"AttackPhaseStartEffect" 				""																	攻击开始播放特效(被打断时消失)
+
+				攻击开始播放音效(目标是自身,被打断时消失)
+				"AttackPhaseStartSound"
+				{
+					"AttachPointName"       ""      音效挂点
+					"SoundName"             ""      音效资源名
+					"VolumeInSoundGroup"    "1"     在音效组内的音量
+					"Loop"                  "0"     是否循环
+					"Time"                  "0"     起始时间
+					"Pitch"                 "1"     音调
+					"FadeInSeconds"         "0"     淡入时间
+				}
+
+				攻击步骤
+				"Step"
+				{
+					"1"
+					{
+						"AttackAnimationPoint" 			"0.367"																生效时间
+						"AttackLandedEffect" 			"Assets/AssetBundle/Effect/Common/beiji.prefab"						命中特效,如果是弹道需要等弹道命中,默认为XIONG_GD,和弹道或攻击方向保持一个朝向
+						
+						命中音效(目标是被攻击者)
+						"AttackLandedSound"
+						{
+							"AttachPointName"       ""      音效挂点
+							"SoundName"             ""      音效资源名
+							"VolumeInSoundGroup"    "1"     在音效组内的音量
+							"Loop"                  "0"     是否循环
+							"Time"                  "0"     起始时间
+							"Pitch"                 "1"     音调
+							"FadeInSeconds"         "0"     淡入时间
+						}
+
+						"ProjectileSpeed"				"0"																	弹道速度(大于0时发射弹道)
+						"ProjectileEffect"				""																	弹道特效
+						"ProjectileSpawnPoint"			""																	弹道起始挂点,不填默认为DANDAO_GD
+					}
+					"2"
+					{
+						...
+					}
+				}
+			}
+			"2"
+			{
+				...
+			}
+		}
+
+		暴击攻击列表
+		"CritAttack"
+		{
+		
+		}
+	}
+}

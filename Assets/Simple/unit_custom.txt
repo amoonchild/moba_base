@@ -1,0 +1,8173 @@
+﻿
+"LiaozhaiUnits"
+{
+	"Version"		"1"
+
+	// 道士
+	"1"
+	{
+		"SerialId"				"1"
+		"Name"					"道士"
+		"Trait"					"99"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"101"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 术士
+	"2"
+	{
+		"SerialId"				"2"
+		"Name"					"术士"
+		"Trait"					"99"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"201"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 侠客
+	"3"
+	{
+		"SerialId"				"3"
+		"Name"					"侠客"
+		"Trait"					"99"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"301"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 障碍
+	"998"
+	{
+		"SerialId"				"998"
+		"Name"					"障碍"
+		"Trait"					"99"
+		"AttackCapability"		"UNIT_CAP_NONE"
+		"Skin"					"998"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 隐形怪
+	"999"
+	{
+		"SerialId"				"999"
+		"Name"					"隐形怪"
+		"Trait"					"99"
+		"AttackCapability"		"UNIT_CAP_NONE"
+		"Skin"					"999"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 画皮-卡牌
+	"1001"
+	{
+		"SerialId"				"1001"
+		"Name"					"画皮-卡牌"
+		"Trait"					"3"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"100101"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 梅女-卡牌
+	"1002"
+	{
+		"SerialId"				"1002"
+		"Name"					"梅女-卡牌"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"100201"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 画壁-卡牌
+	"1003"
+	{
+		"SerialId"				"1003"
+		"Name"					"画壁-卡牌"
+		"Trait"					"1"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"100301"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 山魈-卡牌
+	"1004"
+	{
+		"SerialId"				"1004"
+		"Name"					"山魈-卡牌"
+		"Trait"					"1"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"100401"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 荞中怪-卡牌
+	"1005"
+	{
+		"SerialId"				"1005"
+		"Name"					"荞中怪-卡牌"
+		"Trait"					"2"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"100501"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 邬君-卡牌
+	"1006"
+	{
+		"SerialId"				"1006"
+		"Name"					"邬君-卡牌"
+		"Trait"					"4"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"100601"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 长清-卡牌
+	"1007"
+	{
+		"SerialId"				"1007"
+		"Name"					"长清-卡牌"
+		"Trait"					"1"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"100701"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 灵蛇子-卡牌
+	"1008"
+	{
+		"SerialId"				"1008"
+		"Name"					"灵蛇子-卡牌"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"100801"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 翩翩-卡牌
+	"1009"
+	{
+		"SerialId"				"1009"
+		"Name"					"翩翩-卡牌"
+		"Trait"					"4"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"100901"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 娇娜-卡牌
+	"1010"
+	{
+		"SerialId"				"1010"
+		"Name"					"娇娜-卡牌"
+		"Trait"					"4"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"101001"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 雹神-卡牌
+	"1011"
+	{
+		"SerialId"				"1011"
+		"Name"					"雹神-卡牌"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"101101"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 鹰虎神-卡牌
+	"1012"
+	{
+		"SerialId"				"1012"
+		"Name"					"鹰虎神-卡牌"
+		"Trait"					"1"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"101201"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 东海妖-卡牌
+	"1013"
+	{
+		"SerialId"				"1013"
+		"Name"					"东海妖-卡牌"
+		"Trait"					"6"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"101301"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 人偶师-卡牌
+	"1014"
+	{
+		"SerialId"				"1014"
+		"Name"					"人偶师-卡牌"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"101401"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 绿衣-卡牌
+	"1015"
+	{
+		"SerialId"				"1015"
+		"Name"					"绿衣-卡牌"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"101501"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 雷公-卡牌
+	"1016"
+	{
+		"SerialId"				"1016"
+		"Name"					"雷公-卡牌"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"101601"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 山市之主-卡牌
+	"1017"
+	{
+		"SerialId"				"1017"
+		"Name"					"山市之主-卡牌"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"101701"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 聂政-卡牌
+	"1018"
+	{
+		"SerialId"				"1018"
+		"Name"					"聂政-卡牌"
+		"Trait"					"3"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"101801"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 婴宁-卡牌
+	"1019"
+	{
+		"SerialId"				"1019"
+		"Name"					"婴宁-卡牌"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"101901"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 泰山府君-卡牌
+	"1020"
+	{
+		"SerialId"				"1020"
+		"Name"					"泰山府君-卡牌"
+		"Trait"					"2"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"102001"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 貔貅-卡牌
+	"1021"
+	{
+		"SerialId"				"1021"
+		"Name"					"貔貅-卡牌"
+		"Trait"					"2"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"102101"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 黑山老妖-卡牌
+	"1022"
+	{
+		"SerialId"				"1022"
+		"Name"					"黑山老妖-卡牌"
+		"Trait"					"6"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"102201"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 黑无常-卡牌
+	"1023"
+	{
+		"SerialId"				"1023"
+		"Name"					"黑无常-卡牌"
+		"Trait"					"2"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"102301"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 白无常-卡牌
+	"1024"
+	{
+		"SerialId"				"1024"
+		"Name"					"白无常-卡牌"
+		"Trait"					"3"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"102401"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 聂小倩-卡牌
+	"1025"
+	{
+		"SerialId"				"1025"
+		"Name"					"聂小倩-卡牌"
+		"Trait"					"4"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"102501"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 尸姬-卡牌
+	"1026"
+	{
+		"SerialId"				"1026"
+		"Name"					"尸姬-卡牌"
+		"Trait"					"6"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"102601"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 义虎-卡牌
+	"1027"
+	{
+		"SerialId"				"1027"
+		"Name"					"义虎-卡牌"
+		"Trait"					"2"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"102701"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 游方术士-卡牌
+	"1028"
+	{
+		"SerialId"				"1028"
+		"Name"					"游方术士-卡牌"
+		"Trait"					"6"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"102801"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 山中凶灵-卡牌
+	"1029"
+	{
+		"SerialId"				"1029"
+		"Name"					"山中凶灵-卡牌"
+		"Trait"					"3"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"102901"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Flags"			"UNIT_TARGET_FLAG_RANGED_ONLY"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"3"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 行僵-卡牌
+	"1030"
+	{
+		"SerialId"				"1030"
+		"Name"					"行僵-卡牌"
+		"Trait"					"6"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"103001"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 山妖-卡牌
+	"1031"
+	{
+		"SerialId"				"1031"
+		"Name"					"山妖-卡牌"
+		"Trait"					"3"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"103101"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 小鬼-卡牌
+	"1032"
+	{
+		"SerialId"				"1032"
+		"Name"					"小鬼-卡牌"
+		"Trait"					"6"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"103201"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 冥骨-卡牌
+	"1033"
+	{
+		"SerialId"				"1033"
+		"Name"					"冥骨-卡牌"
+		"Trait"					"2"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"103301"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 阴差-卡牌
+	"1034"
+	{
+		"SerialId"				"1034"
+		"Name"					"阴差-卡牌"
+		"Trait"					"3"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"103401"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 玳瑁-卡牌
+	"1035"
+	{
+		"SerialId"				"1035"
+		"Name"					"玳瑁-卡牌"
+		"Trait"					"1"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"103501"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 崖螳螂-卡牌
+	"1036"
+	{
+		"SerialId"				"1036"
+		"Name"					"崖螳螂-卡牌"
+		"Trait"					"2"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"103601"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 孟婆-卡牌
+	"1037"
+	{
+		"SerialId"				"1037"
+		"Name"					"孟婆-卡牌"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"103701"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 燕女-卡牌
+	"1038"
+	{
+		"SerialId"				"1038"
+		"Name"					"燕女-卡牌"
+		"Trait"					"3"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"103801"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 苏仙-卡牌
+	"1039"
+	{
+		"SerialId"				"1039"
+		"Name"					"苏仙-卡牌"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"103901"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 秋练-卡牌
+	"1040"
+	{
+		"SerialId"				"1040"
+		"Name"					"秋练-卡牌"
+		"Trait"					"4"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"104001"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 竹青鸦-卡牌
+	"1041"
+	{
+		"SerialId"				"1041"
+		"Name"					"竹青鸦-卡牌"
+		"Trait"					"6"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"104101"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 莲香-卡牌
+	"1042"
+	{
+		"SerialId"				"1042"
+		"Name"					"莲香-卡牌"
+		"Trait"					"2"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"104201"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 蝗神-卡牌
+	"1043"
+	{
+		"SerialId"				"1043"
+		"Name"					"蝗神-卡牌"
+		"Trait"					"6"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"104301"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 阎罗-卡牌
+	"1044"
+	{
+		"SerialId"				"1044"
+		"Name"					"阎罗-卡牌"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"104401"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 盗狐-卡牌
+	"1045"
+	{
+		"SerialId"				"1045"
+		"Name"					"盗狐-卡牌"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"104501"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 姑心画-卡牌
+	"1046"
+	{
+		"SerialId"				"1046"
+		"Name"					"姑心画-卡牌"
+		"Trait"					"4"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"104601"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 采薇翁-卡牌
+	"1047"
+	{
+		"SerialId"				"1047"
+		"Name"					"采薇翁-卡牌"
+		"Trait"					"2"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"104701"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 八大王-卡牌
+	"1049"
+	{
+		"SerialId"				"1049"
+		"Name"					"八大王-卡牌"
+		"Trait"					"1"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"104901"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 九山王-卡牌
+	"1050"
+	{
+		"SerialId"				"1050"
+		"Name"					"九山王-卡牌"
+		"Trait"					"2"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"105001"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 庚娘-卡牌
+	"1052"
+	{
+		"SerialId"				"1052"
+		"Name"					"庚娘-卡牌"
+		"Trait"					"3"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"105201"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 燕赤霞-卡牌
+	"1053"
+	{
+		"SerialId"				"1053"
+		"Name"					"燕赤霞-卡牌"
+		"Trait"					"1"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"105301"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 辛十四娘-卡牌
+	"1054"
+	{
+		"SerialId"				"1054"
+		"Name"					"辛十四娘-卡牌"
+		"Trait"					"4"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"105401"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 木偶甲-卡牌
+	"2001"
+	{
+		"SerialId"				"2001"
+		"Name"					"木偶甲-卡牌"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"200101"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 木偶乙-卡牌
+	"2002"
+	{
+		"SerialId"				"2002"
+		"Name"					"木偶乙-卡牌"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"200201"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 白蛇-卡牌
+	"3001"
+	{
+		"SerialId"				"3001"
+		"Name"					"白蛇-卡牌"
+		"Trait"					"6"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"300101"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 山妖-卡牌
+	"3002"
+	{
+		"SerialId"				"3002"
+		"Name"					"山妖-卡牌"
+		"Trait"					"3"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"300201"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 山妖-卡牌
+	"3003"
+	{
+		"SerialId"				"3003"
+		"Name"					"山妖-卡牌"
+		"Trait"					"3"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"300301"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 山妖-卡牌
+	"3004"
+	{
+		"SerialId"				"3004"
+		"Name"					"山妖-卡牌"
+		"Trait"					"3"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"300401"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 老和尚-卡牌
+	"3005"
+	{
+		"SerialId"				"3005"
+		"Name"					"老和尚-卡牌"
+		"Trait"					"1"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"300501"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 画皮-技能
+	"1201"
+	{
+		"SerialId"				"1201"
+		"Name"					"画皮-技能"
+		"Trait"					"3"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"120101"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 梅女-技能
+	"1202"
+	{
+		"SerialId"				"1202"
+		"Name"					"梅女-技能"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"120201"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 画壁-技能
+	"1203"
+	{
+		"SerialId"				"1203"
+		"Name"					"画壁-技能"
+		"Trait"					"1"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"120301"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 山魈-技能
+	"1204"
+	{
+		"SerialId"				"1204"
+		"Name"					"山魈-技能"
+		"Trait"					"1"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"120401"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 荞中怪-技能
+	"1205"
+	{
+		"SerialId"				"1205"
+		"Name"					"荞中怪-技能"
+		"Trait"					"2"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"120501"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 邬君-技能
+	"1206"
+	{
+		"SerialId"				"1206"
+		"Name"					"邬君-技能"
+		"Trait"					"4"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"120601"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 长清-技能
+	"1207"
+	{
+		"SerialId"				"1207"
+		"Name"					"长清-技能"
+		"Trait"					"1"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"120701"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 灵蛇子-技能
+	"1208"
+	{
+		"SerialId"				"1208"
+		"Name"					"灵蛇子-技能"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"120801"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 翩翩-技能
+	"1209"
+	{
+		"SerialId"				"1209"
+		"Name"					"翩翩-技能"
+		"Trait"					"4"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"120901"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 娇娜-技能
+	"1210"
+	{
+		"SerialId"				"1210"
+		"Name"					"娇娜-技能"
+		"Trait"					"4"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"121001"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 雹神-技能
+	"1211"
+	{
+		"SerialId"				"1211"
+		"Name"					"雹神-技能"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"121101"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 鹰虎神-技能
+	"1212"
+	{
+		"SerialId"				"1212"
+		"Name"					"鹰虎神-技能"
+		"Trait"					"1"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"121201"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 东海妖-技能
+	"1213"
+	{
+		"SerialId"				"1213"
+		"Name"					"东海妖-技能"
+		"Trait"					"6"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"121301"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 人偶师-技能
+	"1214"
+	{
+		"SerialId"				"1214"
+		"Name"					"人偶师-技能"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"121401"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 绿衣-技能
+	"1215"
+	{
+		"SerialId"				"1215"
+		"Name"					"绿衣-技能"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"121501"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 雷公-技能
+	"1216"
+	{
+		"SerialId"				"1216"
+		"Name"					"雷公-技能"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"121601"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 山市之主-技能
+	"1217"
+	{
+		"SerialId"				"1217"
+		"Name"					"山市之主-技能"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"121701"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 聂政-技能
+	"1218"
+	{
+		"SerialId"				"1218"
+		"Name"					"聂政-技能"
+		"Trait"					"3"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"121801"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 婴宁-技能
+	"1219"
+	{
+		"SerialId"				"1219"
+		"Name"					"婴宁-技能"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"121901"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 泰山府君-技能
+	"1220"
+	{
+		"SerialId"				"1220"
+		"Name"					"泰山府君-技能"
+		"Trait"					"2"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"122001"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 貔貅-技能
+	"1221"
+	{
+		"SerialId"				"1221"
+		"Name"					"貔貅-技能"
+		"Trait"					"2"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"122101"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 黑山老妖-技能
+	"1222"
+	{
+		"SerialId"				"1222"
+		"Name"					"黑山老妖-技能"
+		"Trait"					"6"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"122201"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 黑无常-技能
+	"1223"
+	{
+		"SerialId"				"1223"
+		"Name"					"黑无常-技能"
+		"Trait"					"2"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"122301"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 白无常-技能
+	"1224"
+	{
+		"SerialId"				"1224"
+		"Name"					"白无常-技能"
+		"Trait"					"3"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"122401"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 聂小倩-技能
+	"1225"
+	{
+		"SerialId"				"1225"
+		"Name"					"聂小倩-技能"
+		"Trait"					"4"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"122501"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 尸姬-技能
+	"1226"
+	{
+		"SerialId"				"1226"
+		"Name"					"尸姬-技能"
+		"Trait"					"6"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"122601"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 义虎-技能
+	"1227"
+	{
+		"SerialId"				"1227"
+		"Name"					"义虎-技能"
+		"Trait"					"2"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"122701"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 游方术士-技能
+	"1228"
+	{
+		"SerialId"				"1228"
+		"Name"					"游方术士-技能"
+		"Trait"					"6"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"122801"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 山中凶灵-技能
+	"1229"
+	{
+		"SerialId"				"1229"
+		"Name"					"山中凶灵-技能"
+		"Trait"					"3"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"122901"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Flags"			"UNIT_TARGET_FLAG_RANGED_ONLY"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"3"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 行僵-技能
+	"1230"
+	{
+		"SerialId"				"1230"
+		"Name"					"行僵-技能"
+		"Trait"					"6"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"123001"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 山妖-技能
+	"1231"
+	{
+		"SerialId"				"1231"
+		"Name"					"山妖-技能"
+		"Trait"					"3"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"123101"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 小鬼-技能
+	"1232"
+	{
+		"SerialId"				"1232"
+		"Name"					"小鬼-技能"
+		"Trait"					"6"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"123201"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 冥骨-技能
+	"1233"
+	{
+		"SerialId"				"1233"
+		"Name"					"冥骨-技能"
+		"Trait"					"2"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"123301"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 阴差-技能
+	"1234"
+	{
+		"SerialId"				"1234"
+		"Name"					"阴差-技能"
+		"Trait"					"3"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"123401"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 玳瑁-技能
+	"1235"
+	{
+		"SerialId"				"1235"
+		"Name"					"玳瑁-技能"
+		"Trait"					"1"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"123501"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 崖螳螂-技能
+	"1236"
+	{
+		"SerialId"				"1236"
+		"Name"					"崖螳螂-技能"
+		"Trait"					"2"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"123601"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 孟婆-技能
+	"1237"
+	{
+		"SerialId"				"1237"
+		"Name"					"孟婆-技能"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"123701"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 燕女-技能
+	"1238"
+	{
+		"SerialId"				"1238"
+		"Name"					"燕女-技能"
+		"Trait"					"3"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"123801"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 苏仙-技能
+	"1239"
+	{
+		"SerialId"				"1239"
+		"Name"					"苏仙-技能"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"123901"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 秋练-技能
+	"1240"
+	{
+		"SerialId"				"1240"
+		"Name"					"秋练-技能"
+		"Trait"					"4"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"124001"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 竹青鸦-技能
+	"1241"
+	{
+		"SerialId"				"1241"
+		"Name"					"竹青鸦-技能"
+		"Trait"					"6"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"124101"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 莲香-技能
+	"1242"
+	{
+		"SerialId"				"1242"
+		"Name"					"莲香-技能"
+		"Trait"					"2"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"124201"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 蝗神-技能
+	"1243"
+	{
+		"SerialId"				"1243"
+		"Name"					"蝗神-技能"
+		"Trait"					"6"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"124301"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 阎罗-技能
+	"1244"
+	{
+		"SerialId"				"1244"
+		"Name"					"阎罗-技能"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"124401"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 盗狐-技能
+	"1245"
+	{
+		"SerialId"				"1245"
+		"Name"					"盗狐-技能"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"124501"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 姑心画-技能
+	"1246"
+	{
+		"SerialId"				"1246"
+		"Name"					"姑心画-技能"
+		"Trait"					"4"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"124601"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 采薇翁-技能
+	"1247"
+	{
+		"SerialId"				"1247"
+		"Name"					"采薇翁-技能"
+		"Trait"					"2"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"124701"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 八大王-技能
+	"1249"
+	{
+		"SerialId"				"1249"
+		"Name"					"八大王-技能"
+		"Trait"					"1"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"124901"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 九山王-卡牌
+	"1250"
+	{
+		"SerialId"				"1250"
+		"Name"					"九山王-卡牌"
+		"Trait"					"2"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"125001"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 庚娘-技能
+	"1252"
+	{
+		"SerialId"				"1252"
+		"Name"					"庚娘-技能"
+		"Trait"					"3"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"125201"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 燕赤霞-技能
+	"1253"
+	{
+		"SerialId"				"1253"
+		"Name"					"燕赤霞-技能"
+		"Trait"					"1"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"125301"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 辛十四娘-技能
+	"1254"
+	{
+		"SerialId"				"1254"
+		"Name"					"辛十四娘-技能"
+		"Trait"					"4"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"125401"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 木偶甲-技能
+	"2201"
+	{
+		"SerialId"				"2201"
+		"Name"					"木偶甲-技能"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"220101"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 木偶乙-技能
+	"2202"
+	{
+		"SerialId"				"2202"
+		"Name"					"木偶乙-技能"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"220201"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 白蛇-技能
+	"3201"
+	{
+		"SerialId"				"3201"
+		"Name"					"白蛇-技能"
+		"Trait"					"6"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"320101"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 山妖-技能
+	"3202"
+	{
+		"SerialId"				"3202"
+		"Name"					"山妖-技能"
+		"Trait"					"3"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"320201"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 山妖-技能
+	"3203"
+	{
+		"SerialId"				"3203"
+		"Name"					"山妖-技能"
+		"Trait"					"3"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"320301"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 山妖-技能
+	"3204"
+	{
+		"SerialId"				"3204"
+		"Name"					"山妖-技能"
+		"Trait"					"3"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"320401"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 老和尚-技能
+	"3205"
+	{
+		"SerialId"				"3205"
+		"Name"					"老和尚-技能"
+		"Trait"					"1"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"320501"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 画皮-领主
+	"1401"
+	{
+		"SerialId"				"1401"
+		"Name"					"画皮-领主"
+		"Trait"					"3"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"140101"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 梅女-领主
+	"1402"
+	{
+		"SerialId"				"1402"
+		"Name"					"梅女-领主"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"140201"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 画壁-领主
+	"1403"
+	{
+		"SerialId"				"1403"
+		"Name"					"画壁-领主"
+		"Trait"					"1"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"140301"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 山魈-领主
+	"1404"
+	{
+		"SerialId"				"1404"
+		"Name"					"山魈-领主"
+		"Trait"					"1"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"140401"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 荞中怪-领主
+	"1405"
+	{
+		"SerialId"				"1405"
+		"Name"					"荞中怪-领主"
+		"Trait"					"2"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"140501"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 邬君-领主
+	"1406"
+	{
+		"SerialId"				"1406"
+		"Name"					"邬君-领主"
+		"Trait"					"4"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"140601"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 长清-领主
+	"1407"
+	{
+		"SerialId"				"1407"
+		"Name"					"长清-领主"
+		"Trait"					"1"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"140701"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 灵蛇子-领主
+	"1408"
+	{
+		"SerialId"				"1408"
+		"Name"					"灵蛇子-领主"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"140801"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 翩翩-领主
+	"1409"
+	{
+		"SerialId"				"1409"
+		"Name"					"翩翩-领主"
+		"Trait"					"4"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"140901"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 娇娜-领主
+	"1410"
+	{
+		"SerialId"				"1410"
+		"Name"					"娇娜-领主"
+		"Trait"					"4"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"141001"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 雹神-领主
+	"1411"
+	{
+		"SerialId"				"1411"
+		"Name"					"雹神-领主"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"141101"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 鹰虎神-领主
+	"1412"
+	{
+		"SerialId"				"1412"
+		"Name"					"鹰虎神-领主"
+		"Trait"					"1"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"141201"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 东海妖-领主
+	"1413"
+	{
+		"SerialId"				"1413"
+		"Name"					"东海妖-领主"
+		"Trait"					"6"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"141301"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 人偶师-领主
+	"1414"
+	{
+		"SerialId"				"1414"
+		"Name"					"人偶师-领主"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"141401"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 绿衣-领主
+	"1415"
+	{
+		"SerialId"				"1415"
+		"Name"					"绿衣-领主"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"141501"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 雷公-领主
+	"1416"
+	{
+		"SerialId"				"1416"
+		"Name"					"雷公-领主"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"141601"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 山市之主-领主
+	"1417"
+	{
+		"SerialId"				"1417"
+		"Name"					"山市之主-领主"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"141701"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 聂政-领主
+	"1418"
+	{
+		"SerialId"				"1418"
+		"Name"					"聂政-领主"
+		"Trait"					"3"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"141801"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 婴宁-领主
+	"1419"
+	{
+		"SerialId"				"1419"
+		"Name"					"婴宁-领主"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"141901"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 泰山府君-领主
+	"1420"
+	{
+		"SerialId"				"1420"
+		"Name"					"泰山府君-领主"
+		"Trait"					"2"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"142001"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 貔貅-领主
+	"1421"
+	{
+		"SerialId"				"1421"
+		"Name"					"貔貅-领主"
+		"Trait"					"2"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"142101"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 黑山老妖-领主
+	"1422"
+	{
+		"SerialId"				"1422"
+		"Name"					"黑山老妖-领主"
+		"Trait"					"6"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"142201"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 黑无常-领主
+	"1423"
+	{
+		"SerialId"				"1423"
+		"Name"					"黑无常-领主"
+		"Trait"					"2"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"142301"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 白无常-领主
+	"1424"
+	{
+		"SerialId"				"1424"
+		"Name"					"白无常-领主"
+		"Trait"					"3"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"142401"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 聂小倩-领主
+	"1425"
+	{
+		"SerialId"				"1425"
+		"Name"					"聂小倩-领主"
+		"Trait"					"4"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"142501"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 尸姬-领主
+	"1426"
+	{
+		"SerialId"				"1426"
+		"Name"					"尸姬-领主"
+		"Trait"					"6"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"142601"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 义虎-领主
+	"1427"
+	{
+		"SerialId"				"1427"
+		"Name"					"义虎-领主"
+		"Trait"					"2"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"142701"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 游方术士-领主
+	"1428"
+	{
+		"SerialId"				"1428"
+		"Name"					"游方术士-领主"
+		"Trait"					"6"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"142801"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 山中凶灵-领主
+	"1429"
+	{
+		"SerialId"				"1429"
+		"Name"					"山中凶灵-领主"
+		"Trait"					"3"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"142901"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Flags"			"UNIT_TARGET_FLAG_RANGED_ONLY"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"3"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 行僵-领主
+	"1430"
+	{
+		"SerialId"				"1430"
+		"Name"					"行僵-领主"
+		"Trait"					"6"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"143001"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 山妖-领主
+	"1431"
+	{
+		"SerialId"				"1431"
+		"Name"					"山妖-领主"
+		"Trait"					"3"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"143101"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 小鬼-领主
+	"1432"
+	{
+		"SerialId"				"1432"
+		"Name"					"小鬼-领主"
+		"Trait"					"6"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"143201"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 冥骨-领主
+	"1433"
+	{
+		"SerialId"				"1433"
+		"Name"					"冥骨-领主"
+		"Trait"					"2"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"143301"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 阴差-领主
+	"1434"
+	{
+		"SerialId"				"1434"
+		"Name"					"阴差-领主"
+		"Trait"					"3"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"143401"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 玳瑁-领主
+	"1435"
+	{
+		"SerialId"				"1435"
+		"Name"					"玳瑁-领主"
+		"Trait"					"1"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"143501"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 崖螳螂-领主
+	"1436"
+	{
+		"SerialId"				"1436"
+		"Name"					"崖螳螂-领主"
+		"Trait"					"2"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"143601"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 孟婆-领主
+	"1437"
+	{
+		"SerialId"				"1437"
+		"Name"					"孟婆-领主"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"143701"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 燕女-领主
+	"1438"
+	{
+		"SerialId"				"1438"
+		"Name"					"燕女-领主"
+		"Trait"					"3"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"143801"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 苏仙-领主
+	"1439"
+	{
+		"SerialId"				"1439"
+		"Name"					"苏仙-领主"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"143901"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 秋练-领主
+	"1440"
+	{
+		"SerialId"				"1440"
+		"Name"					"秋练-领主"
+		"Trait"					"4"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"144001"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 竹青鸦-领主
+	"1441"
+	{
+		"SerialId"				"1441"
+		"Name"					"竹青鸦-领主"
+		"Trait"					"6"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"144101"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 莲香-领主
+	"1442"
+	{
+		"SerialId"				"1442"
+		"Name"					"莲香-领主"
+		"Trait"					"2"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"144201"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 蝗神-领主
+	"1443"
+	{
+		"SerialId"				"1443"
+		"Name"					"蝗神-领主"
+		"Trait"					"6"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"144301"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 阎罗-领主
+	"1444"
+	{
+		"SerialId"				"1444"
+		"Name"					"阎罗-领主"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"144401"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 盗狐-领主
+	"1445"
+	{
+		"SerialId"				"1445"
+		"Name"					"盗狐-领主"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"144501"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 姑心画-领主
+	"1446"
+	{
+		"SerialId"				"1446"
+		"Name"					"姑心画-领主"
+		"Trait"					"4"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"144601"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 采薇翁-领主
+	"1447"
+	{
+		"SerialId"				"1447"
+		"Name"					"采薇翁-领主"
+		"Trait"					"2"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"144701"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 八大王-领主
+	"1449"
+	{
+		"SerialId"				"1449"
+		"Name"					"八大王-领主"
+		"Trait"					"1"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"144901"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 九山王-领主
+	"1450"
+	{
+		"SerialId"				"1450"
+		"Name"					"九山王-领主"
+		"Trait"					"2"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"145001"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 庚娘-领主
+	"1452"
+	{
+		"SerialId"				"1452"
+		"Name"					"庚娘-领主"
+		"Trait"					"3"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"145201"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 燕赤霞-领主
+	"1453"
+	{
+		"SerialId"				"1453"
+		"Name"					"燕赤霞-领主"
+		"Trait"					"1"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"145301"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 辛十四娘-领主
+	"1454"
+	{
+		"SerialId"				"1454"
+		"Name"					"辛十四娘-领主"
+		"Trait"					"4"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"145401"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 木偶甲-领主
+	"2401"
+	{
+		"SerialId"				"2401"
+		"Name"					"木偶甲-领主"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"240101"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 木偶乙-领主
+	"2402"
+	{
+		"SerialId"				"2402"
+		"Name"					"木偶乙-领主"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"240201"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 白蛇-领主
+	"3401"
+	{
+		"SerialId"				"3401"
+		"Name"					"白蛇-领主"
+		"Trait"					"6"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"340101"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 山妖-领主
+	"3402"
+	{
+		"SerialId"				"3402"
+		"Name"					"山妖-领主"
+		"Trait"					"3"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"340201"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 山妖-领主
+	"3403"
+	{
+		"SerialId"				"3403"
+		"Name"					"山妖-领主"
+		"Trait"					"3"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"340301"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 山妖-领主
+	"3404"
+	{
+		"SerialId"				"3404"
+		"Name"					"山妖-领主"
+		"Trait"					"3"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"340401"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 老和尚-领主
+	"3405"
+	{
+		"SerialId"				"3405"
+		"Name"					"老和尚-领主"
+		"Trait"					"1"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"340501"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 画皮-宗门
+	"1601"
+	{
+		"SerialId"				"1601"
+		"Name"					"画皮-宗门"
+		"Trait"					"3"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"160101"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 梅女-宗门
+	"1602"
+	{
+		"SerialId"				"1602"
+		"Name"					"梅女-宗门"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"160201"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 画壁-宗门
+	"1603"
+	{
+		"SerialId"				"1603"
+		"Name"					"画壁-宗门"
+		"Trait"					"1"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"160301"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 山魈-宗门
+	"1604"
+	{
+		"SerialId"				"1604"
+		"Name"					"山魈-宗门"
+		"Trait"					"1"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"160401"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 荞中怪-宗门
+	"1605"
+	{
+		"SerialId"				"1605"
+		"Name"					"荞中怪-宗门"
+		"Trait"					"2"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"160501"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 邬君-宗门
+	"1606"
+	{
+		"SerialId"				"1606"
+		"Name"					"邬君-宗门"
+		"Trait"					"4"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"160601"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 长清-宗门
+	"1607"
+	{
+		"SerialId"				"1607"
+		"Name"					"长清-宗门"
+		"Trait"					"1"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"160701"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 灵蛇子-宗门
+	"1608"
+	{
+		"SerialId"				"1608"
+		"Name"					"灵蛇子-宗门"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"160801"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 翩翩-宗门
+	"1609"
+	{
+		"SerialId"				"1609"
+		"Name"					"翩翩-宗门"
+		"Trait"					"4"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"160901"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 娇娜-宗门
+	"1610"
+	{
+		"SerialId"				"1610"
+		"Name"					"娇娜-宗门"
+		"Trait"					"4"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"161001"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 雹神-宗门
+	"1611"
+	{
+		"SerialId"				"1611"
+		"Name"					"雹神-宗门"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"161101"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 鹰虎神-宗门
+	"1612"
+	{
+		"SerialId"				"1612"
+		"Name"					"鹰虎神-宗门"
+		"Trait"					"1"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"161201"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 东海妖-宗门
+	"1613"
+	{
+		"SerialId"				"1613"
+		"Name"					"东海妖-宗门"
+		"Trait"					"6"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"161301"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 人偶师-宗门
+	"1614"
+	{
+		"SerialId"				"1614"
+		"Name"					"人偶师-宗门"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"161401"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 绿衣-宗门
+	"1615"
+	{
+		"SerialId"				"1615"
+		"Name"					"绿衣-宗门"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"161501"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 雷公-宗门
+	"1616"
+	{
+		"SerialId"				"1616"
+		"Name"					"雷公-宗门"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"161601"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 山市之主-宗门
+	"1617"
+	{
+		"SerialId"				"1617"
+		"Name"					"山市之主-宗门"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"161701"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 聂政-宗门
+	"1618"
+	{
+		"SerialId"				"1618"
+		"Name"					"聂政-宗门"
+		"Trait"					"3"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"161801"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 婴宁-宗门
+	"1619"
+	{
+		"SerialId"				"1619"
+		"Name"					"婴宁-宗门"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"161901"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 泰山府君-宗门
+	"1620"
+	{
+		"SerialId"				"1620"
+		"Name"					"泰山府君-宗门"
+		"Trait"					"2"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"162001"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 貔貅-宗门
+	"1621"
+	{
+		"SerialId"				"1621"
+		"Name"					"貔貅-宗门"
+		"Trait"					"2"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"162101"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 黑山老妖-宗门
+	"1622"
+	{
+		"SerialId"				"1622"
+		"Name"					"黑山老妖-宗门"
+		"Trait"					"6"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"162201"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 黑无常-宗门
+	"1623"
+	{
+		"SerialId"				"1623"
+		"Name"					"黑无常-宗门"
+		"Trait"					"2"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"162301"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 白无常-宗门
+	"1624"
+	{
+		"SerialId"				"1624"
+		"Name"					"白无常-宗门"
+		"Trait"					"3"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"162401"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 聂小倩-宗门
+	"1625"
+	{
+		"SerialId"				"1625"
+		"Name"					"聂小倩-宗门"
+		"Trait"					"4"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"162501"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 尸姬-宗门
+	"1626"
+	{
+		"SerialId"				"1626"
+		"Name"					"尸姬-宗门"
+		"Trait"					"6"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"162601"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 义虎-宗门
+	"1627"
+	{
+		"SerialId"				"1627"
+		"Name"					"义虎-宗门"
+		"Trait"					"2"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"162701"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 游方术士-宗门
+	"1628"
+	{
+		"SerialId"				"1628"
+		"Name"					"游方术士-宗门"
+		"Trait"					"6"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"162801"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 山中凶灵-宗门
+	"1629"
+	{
+		"SerialId"				"1629"
+		"Name"					"山中凶灵-宗门"
+		"Trait"					"3"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"162901"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Flags"			"UNIT_TARGET_FLAG_RANGED_ONLY"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"3"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 行僵-宗门
+	"1630"
+	{
+		"SerialId"				"1630"
+		"Name"					"行僵-宗门"
+		"Trait"					"6"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"163001"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 山妖-宗门
+	"1631"
+	{
+		"SerialId"				"1631"
+		"Name"					"山妖-宗门"
+		"Trait"					"3"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"163101"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 小鬼-宗门
+	"1632"
+	{
+		"SerialId"				"1632"
+		"Name"					"小鬼-宗门"
+		"Trait"					"6"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"163201"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 冥骨-宗门
+	"1633"
+	{
+		"SerialId"				"1633"
+		"Name"					"冥骨-宗门"
+		"Trait"					"2"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"163301"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 阴差-宗门
+	"1634"
+	{
+		"SerialId"				"1634"
+		"Name"					"阴差-宗门"
+		"Trait"					"3"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"163401"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 玳瑁-宗门
+	"1635"
+	{
+		"SerialId"				"1635"
+		"Name"					"玳瑁-宗门"
+		"Trait"					"1"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"163501"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 崖螳螂-宗门
+	"1636"
+	{
+		"SerialId"				"1636"
+		"Name"					"崖螳螂-宗门"
+		"Trait"					"2"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"163601"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 孟婆-宗门
+	"1637"
+	{
+		"SerialId"				"1637"
+		"Name"					"孟婆-宗门"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"163701"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 燕女-宗门
+	"1638"
+	{
+		"SerialId"				"1638"
+		"Name"					"燕女-宗门"
+		"Trait"					"3"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"163801"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 苏仙-宗门
+	"1639"
+	{
+		"SerialId"				"1639"
+		"Name"					"苏仙-宗门"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"163901"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 秋练-宗门
+	"1640"
+	{
+		"SerialId"				"1640"
+		"Name"					"秋练-宗门"
+		"Trait"					"4"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"164001"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 竹青鸦-宗门
+	"1641"
+	{
+		"SerialId"				"1641"
+		"Name"					"竹青鸦-宗门"
+		"Trait"					"6"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"164101"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 莲香-宗门
+	"1642"
+	{
+		"SerialId"				"1642"
+		"Name"					"莲香-宗门"
+		"Trait"					"2"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"164201"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 蝗神-宗门
+	"1643"
+	{
+		"SerialId"				"1643"
+		"Name"					"蝗神-宗门"
+		"Trait"					"6"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"164301"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 阎罗-宗门
+	"1644"
+	{
+		"SerialId"				"1644"
+		"Name"					"阎罗-宗门"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"164401"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 盗狐-宗门
+	"1645"
+	{
+		"SerialId"				"1645"
+		"Name"					"盗狐-宗门"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"164501"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 姑心画-宗门
+	"1646"
+	{
+		"SerialId"				"1646"
+		"Name"					"姑心画-宗门"
+		"Trait"					"4"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"164601"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 采薇翁-宗门
+	"1647"
+	{
+		"SerialId"				"1647"
+		"Name"					"采薇翁-宗门"
+		"Trait"					"2"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"164701"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 八大王-宗门
+	"1649"
+	{
+		"SerialId"				"1649"
+		"Name"					"八大王-宗门"
+		"Trait"					"1"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"164901"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 九山王-宗门
+	"1650"
+	{
+		"SerialId"				"1650"
+		"Name"					"九山王-宗门"
+		"Trait"					"2"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"165001"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 庚娘-宗门
+	"1652"
+	{
+		"SerialId"				"1652"
+		"Name"					"庚娘-宗门"
+		"Trait"					"3"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"165201"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 燕赤霞-宗门
+	"1653"
+	{
+		"SerialId"				"1653"
+		"Name"					"燕赤霞-宗门"
+		"Trait"					"1"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"165301"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 辛十四娘-宗门
+	"1654"
+	{
+		"SerialId"				"1654"
+		"Name"					"辛十四娘-宗门"
+		"Trait"					"4"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"165401"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 木偶甲-宗门
+	"2601"
+	{
+		"SerialId"				"2601"
+		"Name"					"木偶甲-宗门"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"260101"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 木偶乙-宗门
+	"2602"
+	{
+		"SerialId"				"2602"
+		"Name"					"木偶乙-宗门"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"260201"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 白蛇-宗门
+	"3601"
+	{
+		"SerialId"				"3601"
+		"Name"					"白蛇-宗门"
+		"Trait"					"6"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"360101"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 山妖-宗门
+	"3602"
+	{
+		"SerialId"				"3602"
+		"Name"					"山妖-宗门"
+		"Trait"					"3"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"360201"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 山妖-宗门
+	"3603"
+	{
+		"SerialId"				"3603"
+		"Name"					"山妖-宗门"
+		"Trait"					"3"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"360301"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 山妖-宗门
+	"3604"
+	{
+		"SerialId"				"3604"
+		"Name"					"山妖-宗门"
+		"Trait"					"3"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"360401"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 老和尚-宗门
+	"3605"
+	{
+		"SerialId"				"3605"
+		"Name"					"老和尚-宗门"
+		"Trait"					"1"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"360501"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 画皮-普通
+	"1801"
+	{
+		"SerialId"				"1801"
+		"Name"					"画皮-普通"
+		"Trait"					"3"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"180101"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 梅女-普通
+	"1802"
+	{
+		"SerialId"				"1802"
+		"Name"					"梅女-普通"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"180201"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 画壁-普通
+	"1803"
+	{
+		"SerialId"				"1803"
+		"Name"					"画壁-普通"
+		"Trait"					"1"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"180301"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 山魈-普通
+	"1804"
+	{
+		"SerialId"				"1804"
+		"Name"					"山魈-普通"
+		"Trait"					"1"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"180401"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 荞中怪-普通
+	"1805"
+	{
+		"SerialId"				"1805"
+		"Name"					"荞中怪-普通"
+		"Trait"					"2"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"180501"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 邬君-普通
+	"1806"
+	{
+		"SerialId"				"1806"
+		"Name"					"邬君-普通"
+		"Trait"					"4"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"180601"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 长清-普通
+	"1807"
+	{
+		"SerialId"				"1807"
+		"Name"					"长清-普通"
+		"Trait"					"1"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"180701"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 灵蛇子-普通
+	"1808"
+	{
+		"SerialId"				"1808"
+		"Name"					"灵蛇子-普通"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"180801"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 翩翩-普通
+	"1809"
+	{
+		"SerialId"				"1809"
+		"Name"					"翩翩-普通"
+		"Trait"					"4"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"180901"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 娇娜-普通
+	"1810"
+	{
+		"SerialId"				"1810"
+		"Name"					"娇娜-普通"
+		"Trait"					"4"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"181001"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 雹神-普通
+	"1811"
+	{
+		"SerialId"				"1811"
+		"Name"					"雹神-普通"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"181101"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 鹰虎神-普通
+	"1812"
+	{
+		"SerialId"				"1812"
+		"Name"					"鹰虎神-普通"
+		"Trait"					"1"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"181201"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 东海妖-普通
+	"1813"
+	{
+		"SerialId"				"1813"
+		"Name"					"东海妖-普通"
+		"Trait"					"6"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"181301"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 人偶师-普通
+	"1814"
+	{
+		"SerialId"				"1814"
+		"Name"					"人偶师-普通"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"181401"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 绿衣-普通
+	"1815"
+	{
+		"SerialId"				"1815"
+		"Name"					"绿衣-普通"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"181501"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 雷公-普通
+	"1816"
+	{
+		"SerialId"				"1816"
+		"Name"					"雷公-普通"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"181601"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 山市之主-普通
+	"1817"
+	{
+		"SerialId"				"1817"
+		"Name"					"山市之主-普通"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"181701"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 聂政-普通
+	"1818"
+	{
+		"SerialId"				"1818"
+		"Name"					"聂政-普通"
+		"Trait"					"3"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"181801"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 婴宁-普通
+	"1819"
+	{
+		"SerialId"				"1819"
+		"Name"					"婴宁-普通"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"181901"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 泰山府君-普通
+	"1820"
+	{
+		"SerialId"				"1820"
+		"Name"					"泰山府君-普通"
+		"Trait"					"2"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"182001"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 貔貅-普通
+	"1821"
+	{
+		"SerialId"				"1821"
+		"Name"					"貔貅-普通"
+		"Trait"					"2"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"182101"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 黑山老妖-普通
+	"1822"
+	{
+		"SerialId"				"1822"
+		"Name"					"黑山老妖-普通"
+		"Trait"					"6"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"182201"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 黑无常-普通
+	"1823"
+	{
+		"SerialId"				"1823"
+		"Name"					"黑无常-普通"
+		"Trait"					"2"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"182301"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 白无常-普通
+	"1824"
+	{
+		"SerialId"				"1824"
+		"Name"					"白无常-普通"
+		"Trait"					"3"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"182401"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 聂小倩-普通
+	"1825"
+	{
+		"SerialId"				"1825"
+		"Name"					"聂小倩-普通"
+		"Trait"					"4"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"182501"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 尸姬-普通
+	"1826"
+	{
+		"SerialId"				"1826"
+		"Name"					"尸姬-普通"
+		"Trait"					"6"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"182601"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 义虎-普通
+	"1827"
+	{
+		"SerialId"				"1827"
+		"Name"					"义虎-普通"
+		"Trait"					"2"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"182701"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 游方术士-普通
+	"1828"
+	{
+		"SerialId"				"1828"
+		"Name"					"游方术士-普通"
+		"Trait"					"6"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"182801"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 山中凶灵-普通
+	"1829"
+	{
+		"SerialId"				"1829"
+		"Name"					"山中凶灵-普通"
+		"Trait"					"3"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"182901"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Flags"			"UNIT_TARGET_FLAG_RANGED_ONLY"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"3"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 行僵-普通
+	"1830"
+	{
+		"SerialId"				"1830"
+		"Name"					"行僵-普通"
+		"Trait"					"6"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"183001"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 山妖-普通
+	"1831"
+	{
+		"SerialId"				"1831"
+		"Name"					"山妖-普通"
+		"Trait"					"3"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"183101"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 小鬼-普通
+	"1832"
+	{
+		"SerialId"				"1832"
+		"Name"					"小鬼-普通"
+		"Trait"					"6"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"183201"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 冥骨-普通
+	"1833"
+	{
+		"SerialId"				"1833"
+		"Name"					"冥骨-普通"
+		"Trait"					"2"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"183301"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 阴差-普通
+	"1834"
+	{
+		"SerialId"				"1834"
+		"Name"					"阴差-普通"
+		"Trait"					"3"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"183401"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 玳瑁-普通
+	"1835"
+	{
+		"SerialId"				"1835"
+		"Name"					"玳瑁-普通"
+		"Trait"					"1"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"183501"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 崖螳螂-普通
+	"1836"
+	{
+		"SerialId"				"1836"
+		"Name"					"崖螳螂-普通"
+		"Trait"					"2"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"183601"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 孟婆-普通
+	"1837"
+	{
+		"SerialId"				"1837"
+		"Name"					"孟婆-普通"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"183701"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 燕女-普通
+	"1838"
+	{
+		"SerialId"				"1838"
+		"Name"					"燕女-普通"
+		"Trait"					"3"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"183801"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 苏仙-普通
+	"1839"
+	{
+		"SerialId"				"1839"
+		"Name"					"苏仙-普通"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"183901"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 秋练-普通
+	"1840"
+	{
+		"SerialId"				"1840"
+		"Name"					"秋练-普通"
+		"Trait"					"4"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"184001"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 竹青鸦-普通
+	"1841"
+	{
+		"SerialId"				"1841"
+		"Name"					"竹青鸦-普通"
+		"Trait"					"6"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"184101"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 莲香-普通
+	"1842"
+	{
+		"SerialId"				"1842"
+		"Name"					"莲香-普通"
+		"Trait"					"2"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"184201"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 蝗神-普通
+	"1843"
+	{
+		"SerialId"				"1843"
+		"Name"					"蝗神-普通"
+		"Trait"					"6"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"184301"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 阎罗-普通
+	"1844"
+	{
+		"SerialId"				"1844"
+		"Name"					"阎罗-普通"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"184401"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 盗狐-普通
+	"1845"
+	{
+		"SerialId"				"1845"
+		"Name"					"盗狐-普通"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"184501"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 姑心画-普通
+	"1846"
+	{
+		"SerialId"				"1846"
+		"Name"					"姑心画-普通"
+		"Trait"					"4"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"184601"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 采薇翁-普通
+	"1847"
+	{
+		"SerialId"				"1847"
+		"Name"					"采薇翁-普通"
+		"Trait"					"2"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"184701"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 八大王-普通
+	"1849"
+	{
+		"SerialId"				"1849"
+		"Name"					"八大王-普通"
+		"Trait"					"1"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"184901"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 九山王-普通
+	"1850"
+	{
+		"SerialId"				"1850"
+		"Name"					"九山王-普通"
+		"Trait"					"2"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"185001"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 庚娘-普通
+	"1852"
+	{
+		"SerialId"				"1852"
+		"Name"					"庚娘-普通"
+		"Trait"					"3"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"185201"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 燕赤霞-普通
+	"1853"
+	{
+		"SerialId"				"1853"
+		"Name"					"燕赤霞-普通"
+		"Trait"					"1"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"185301"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 辛十四娘-普通
+	"1854"
+	{
+		"SerialId"				"1854"
+		"Name"					"辛十四娘-普通"
+		"Trait"					"4"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"185401"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 木偶甲-普通
+	"2801"
+	{
+		"SerialId"				"2801"
+		"Name"					"木偶甲-普通"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"280101"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 木偶乙-普通
+	"2802"
+	{
+		"SerialId"				"2802"
+		"Name"					"木偶乙-普通"
+		"Trait"					"5"
+		"AttackCapability"		"UNIT_CAP_RANGED_ATTACK"
+		"Skin"					"280201"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 白蛇-普通
+	"3801"
+	{
+		"SerialId"				"3801"
+		"Name"					"白蛇-普通"
+		"Trait"					"6"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"380101"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 山妖-普通
+	"3802"
+	{
+		"SerialId"				"3802"
+		"Name"					"山妖-普通"
+		"Trait"					"3"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"380201"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 山妖-普通
+	"3803"
+	{
+		"SerialId"				"3803"
+		"Name"					"山妖-普通"
+		"Trait"					"3"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"380301"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 山妖-普通
+	"3804"
+	{
+		"SerialId"				"3804"
+		"Name"					"山妖-普通"
+		"Trait"					"3"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"380401"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 老和尚-普通
+	"3805"
+	{
+		"SerialId"				"3805"
+		"Name"					"老和尚-普通"
+		"Trait"					"1"
+		"AttackCapability"		"UNIT_CAP_MELEE_ATTACK"
+		"Skin"					"380501"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+	// 旌旗-普通
+	"3806"
+	{
+		"SerialId"				"3806"
+		"Name"					"旌旗-普通"
+		"Trait"					"2"
+		"AttackCapability"		"UNIT_CAP_NONE"
+		"Skin"					"380601"
+
+		"AttackOrder"
+		{
+			"1"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_HERO"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+
+			"2"
+			{
+				"Teams"			"UNIT_TARGET_TEAM_ENEMY"
+				"Types"			"UNIT_TARGET_ALL"
+				"Sort"			"UNIT_TARGET_SORT_NEAREST"
+			}
+		}
+	}
+
+}

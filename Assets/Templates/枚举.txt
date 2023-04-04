@@ -1,0 +1,212 @@
+枚举值定义
+组合枚举用 | 分割
+
+特质类型
+TraitType
+{
+	None													无
+	Tenacious												坚毅
+    Heroic													勇猛
+	Ruthless												无情
+    Friendly												亲和
+    Mysterious												神秘
+    Cunning													狡诈
+    Boss													首领
+}
+
+伤害类型
+DamageType
+{
+	DAMAGE_TYPE_NONE										无
+	DAMAGE_TYPE_PHYSICAL									攻击伤害,使用攻击伤害公式
+	DAMAGE_TYPE_MAGICAL										技能伤害,使用技能伤害公式
+	DAMAGE_TYPE_HP_REMOVAL									生命移除,直接增加或减少
+}
+
+治疗类型
+HealType
+{
+	HEAL_TYPE_NONE											无
+	HEAL_TYPE_NORMAL										普通治疗使用治疗公式
+	HEAL_TYPE_HP_REMOVAL									生命移除直接增加或减少
+}
+
+伤害(治疗)标志
+DamageFlag
+{
+    DAMAGE_FLAG_NONE 
+    DAMAGE_FLAG_NO_DIRECTOR_EVENT							不响应事件
+}
+
+攻击方式类型
+UnitAttackCapabilityType
+{
+    UNIT_CAP_NONE                         					无
+    UNIT_CAP_MELEE_ATTACK                  					近战
+    UNIT_CAP_RANGED_ATTACK                					远程
+}
+
+单位播放动作类型
+UnitActType
+{
+    ACT_NONE												无
+    ACT_ATTACK1												攻击1
+    ACT_ATTACK2 											攻击2
+    ACT_ATTACK3 											攻击3
+    ACT_CAST_ABILITY_1										技能1
+    ACT_CAST_ABILITY_2										技能2
+    ACT_CAST_ABILITY_3										技能3
+    ACT_RUN													移动
+    ACT_DEAD												死亡
+    ACT_IDLE												待机
+}
+
+技能行为类型
+AbilityBehavior
+{
+	ABILITY_BEHAVIOR_NONE									无
+    ABILITY_BEHAVIOR_HIDDEN									这个技能不会在界面上显示
+    ABILITY_BEHAVIOR_PASSIVE								这个技能是一个被动技能,不能被使用
+    ABILITY_BEHAVIOR_NO_TARGET								不需要指定目标就能释放的技能,当按下技能按钮的时候,这个技能就会被释放
+    ABILITY_BEHAVIOR_UNIT_TARGET							技能需要指定一个目标来释放
+    ABILITY_BEHAVIOR_POINT									技能将会在指定的位置释放
+    ABILITY_BEHAVIOR_NODE									技能将会在指定的格子释放
+    ABILITY_BEHAVIOR_AUTOCAST								这个技能可以被自动释放
+    ABILITY_BEHAVIOR_IGNORE_BACKSWING						这个技能将会无视当前施法后摇
+}
+
+技能目标队伍
+AbilityUnitTargetTeam
+{
+    UNIT_TARGET_TEAM_NONE                 					无
+    UNIT_TARGET_TEAM_BOTH                  					所有队伍
+    UNIT_TARGET_TEAM_ENEMY                 					敌方队伍
+    UNIT_TARGET_TEAM_FRIENDLY              					友方队伍
+}
+
+技能目标类型
+AbilityUnitTargetType
+{
+    UNIT_TARGET_NONE                      					无
+    UNIT_TARGET_ALL                        					所有单位
+    UNIT_TARGET_HERO                      					英雄
+	UNIT_TARGET_BOSS                      					首领
+}
+
+技能目标标志
+AbilityUnitTargetFlag
+{	
+    UNIT_TARGET_FLAG_NONE                     				无
+    UNIT_TARGET_FLAG_SELF									自身
+    UNIT_TARGET_FLAG_ATTACK_UNIT							我的攻击目标
+    UNIT_TARGET_FLAG_ATTACKER								攻击我的
+    UNIT_TARGET_FLAG_DEAD									死亡
+    UNIT_TARGET_FLAG_MELEE_ONLY 							近战
+    UNIT_TARGET_FLAG_RANGED_ONLY							远程
+    UNIT_TARGET_FLAG_NOT_ILLUSIONS							非幻象
+    UNIT_TARGET_FLAG_NOT_SUMMONED							非召唤物
+    UNIT_TARGET_FLAG_HAVE_PURGABLE_BUFF						拥有可驱散的Buff
+    UNIT_TARGET_FLAG_HAVE_PURGABLE_DEBUFF					拥有可驱散的Debuff
+	UNIT_TARGET_FLAG_MYILLUSION								我召唤的幻象
+	UNIT_TARGET_FLAG_MYSUMMONED								我召唤的召唤物
+    UNIT_TARGET_FLAG_CENTER                                 多目标Center单位
+    UNIT_TARGET_FLAG_INVISIBLE                              隐身的
+    UNIT_TARGET_FLAG_INVINCIBLE                             无敌的
+    UNIT_TARGET_FLAG_UNSELECTABLE_ATTACK                    不可选的(普攻)
+    UNIT_TARGET_FLAG_UNSELECTABLE_ABILITY                   不可选的(技能)
+}
+
+技能目标排序
+AbilityUnitTargetSort
+{
+	UNIT_TARGET_SORT_NONE									无
+    UNIT_TARGET_SORT_NEAREST								距离我最近的
+    UNIT_TARGET_SORT_MOST_CURR_ATTACK						当前攻击最高的
+    UNIT_TARGET_SORT_MOST_INIT_ATTACK						初始攻击最高的
+    UNIT_TARGET_SORT_MOST_CURR_LEVEL						等级最高的
+    UNIT_TARGET_SORT_LEAST_CURR_HP							当前生命值最低的
+    UNIT_TARGET_SORT_MOST_CURR_HP							当前生命值最高的
+    UNIT_TARGET_SORT_FARTHEST								距离我最远的
+	UNIT_TARGET_SORT_TOTAL_DAMAGE_OUT_MAX					造成总伤害最高的
+	UNIT_TARGET_SORT_TOTAL_DAMAGE_OUT_MIN					造成总伤害最低的
+	UNIT_TARGET_SORT_TOTAL_DAMAGE_IN_MAX					承受总伤害最高的
+	UNIT_TARGET_SORT_TOTAL_DAMAGE_IN_MIN					承受总伤害最低的
+    UNIT_TARGET_SORT_LEAST_CURR_HPPCT                       当前生命值百分比最低的
+	UNIT_TARGET_SORT_MOST_CURR_DEFENSE						当前防御最高的
+	UNIT_TARGET_SORT_MOST_INIT_DEFENSE						基础防御最高的
+	UNIT_TARGET_SORT_MOST_POWER								战力最高的
+	UNIT_TARGET_SORT_LEAST_POWER							战力最低的
+}
+
+Modifier同组叠加类型
+ModifierGroupStackType
+{
+	MODIFIER_GROUP_STACK_CLEAR_OTHER      					删除其他Modifier
+	MODIFIER_GROUP_STACK_IGNORE 							不影响其他Modifier
+    MODIFIER_GROUP_STACK_REFRESH_OTHER_DURATION 			刷新其他Modifier时间
+    MODIFIER_GROUP_STACK_ABSORB_OTHER_DURATION_AND_CLEAR 	获得其他Modifier剩余时间删除其他Modifier
+}
+
+Modifier属性
+ModifierPropertyType
+{
+    MODIFIER_PROPERTY_ATTACK_BONUS							增加攻击数值
+	MODIFIER_PROPERTY_DEFENSE_BONUS							增加防御数值
+	MODIFIER_PROPERTY_ATTACK_SPEED_BONUS					增加攻击速度数值
+	MODIFIER_PROPERTY_MOVE_SPEED_BONUS						增加移动速度数值
+	MODIFIER_PROPERTY_CRIT_DAMAGE_BONUS						增加暴击伤害数值
+	MODIFIER_PROPERTY_CRIT_ODDS_BONUS						增加暴击率数值
+	MODIFIER_PROPERTY_DAMAGE_OUT_BONUS						增加伤害输出数值
+	MODIFIER_PROPERTY_DAMAGE_IN_BONUS						增加伤害减免数值
+	MODIFIER_PROPERTY_DODGE_ODDS_BONUS						增加闪避率数值
+	MODIFIER_PROPERTY_HIT_ODDS_BONUS						增加命中率数值
+	MODIFIER_PROPERTY_ABILITY_OUT_BONUS						增加技能输出数值
+	MODIFIER_PROPERTY_HEAL_OUT_BONUS						增加治疗输出数值
+	MODIFIER_PROPERTY_PHYSICAL_ARMOR_BREAK_BONUS			增加破甲数值
+	MODIFIER_PROPERTY_LIFE_STEAL_BONUS						增加吸血数值
+	MODIFIER_PROPERTY_ATTACK_OUT_BONUS						增加攻击输出数值
+	MODIFIER_PROPERTY_ATTACK_IN_BONUS						增加攻击减免数值
+	MODIFIER_PROPERTY_ABILITY_IN_BONUS						增加技能减免数值
+	MODIFIER_PROPERTY_HEAL_IN_BONUS							增加受到治疗加成数值
+	MODIFIER_PROPERTY_FINAL_DAMAGE_OUT_BONUS				造成伤害时改变伤害值
+	MODIFIER_PROPERTY_FINAL_DAMAGE_IN_BONUS					受到伤害时改变伤害值
+	MODIFIER_PROPERTY_COOLDOWN_BONUS						增加技能冷却
+	MODIFIER_PROPERTY_MAXHP_BONUS							增加最大生命值
+	MODIFIER_PROPERTY_DEFENSE_RATIO_BONUS					增加防御基数
+	MODIFIER_PROPERTY_CRIT_RESISTANCE_BONUS					增加暴伤抗性
+    MODIFIER_PROPERTY_ATTACKRANGE_BONUS                     增加攻击距离
+	MODIFIER_PROPERTY_MODEL_RADII_BONUS						增加模型缩放值
+
+    MODIFIER_PROPERTY_IS_ILLUSION                           幻象标记
+    MODIFIER_PROPERTY_IS_SUMMONED                           召唤物标记
+}
+
+Modifier状态
+ModifierStateType
+{
+	MODIFIER_STATE_MOVE_DISABLED							不能移动
+	MODIFIER_STATE_ATTACK_DISABLED							禁用普攻状态
+	MODIFIER_STATE_ACTIVATES_DISABLED						禁用主动技能状态
+	MODIFIER_STATE_PASSIVES_DISABLED						禁用被动技能状态
+	MODIFIER_STATE_STUNNED									眩晕状态
+	MODIFIER_STATE_BUFF_IMMUNE								免疫Buff状态
+	MODIFIER_STATE_DEBUFF_IMMUNE							免疫Debuff状态
+	MODIFIER_STATE_NEBUFF_IMMUNE							免疫中立Buff状态
+	MODIFIER_STATE_ALLBUFF_IMMUNE							免疫所有Buff状态
+	MODIFIER_STATE_NO_HEALTH_BAR,							隐藏生命条
+	MODIFIER_STATE_INVISIBLE,								模型不可见
+	MODIFIER_STATE_COMMAND_RESTRICTED,						无法执行任何指令
+	MODIFIER_STATE_INVINCIBLE,								无敌的,可以被选为目标,不能被攻击,不会受到伤害或治疗,不会受到Modifier伤害和治疗影响(部分modifier有效)
+	MODIFIER_STATE_UNSELECTABLE,							无法被选取为目标
+	MODIFIER_STATE_UNSELECTABLE_ATTACK,						无法被选取为普攻目标
+	MODIFIER_STATE_UNSELECTABLE_ABILITY,					无法被选取为技能目标
+	
+}
+
+Modifier状态开关
+ModifierStateValueType
+{
+	MODIFIER_STATE_VALUE_NO_ACTION							不生效
+	MODIFIER_STATE_VALUE_ENABLED							启用
+	MODIFIER_STATE_VALUE_DISABLED							禁用
+}
