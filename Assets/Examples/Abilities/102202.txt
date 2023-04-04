@@ -1,0 +1,367 @@
+﻿
+
+"LiaoZhaiAbilities"
+{
+	"Version"		"1"
+
+	"聚灵"
+	{
+		"SerialId"											"10220200"
+		"Id"												"102202"
+		"Name"												"聚灵"
+		"AbilityBehavior"									"ABILITY_BEHAVIOR_PASSIVE"
+
+		"ShowTipInfo"										"1"
+		"ShowCooldown"										"0"
+		"ShowPrompt"										"1"
+		"ShowIcon"											"1"
+
+		"OnOwnerSpawned"
+		{
+			"DelayedAction"
+			{
+				"Delay"										"0.1"
+				"Action"
+				{
+					"Random"
+					//判断提升4
+					{
+						"Condition"							"{Caster['skill3_upgrade_para4']} > 0"
+						
+						"OnSuccess"
+						//提升4，复活光环
+						{
+							"ApplyModifier"
+							{
+								"Target" 					"CASTER"
+								"ModifierSerialId"			"102201004"
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		"Modifiers"
+		{
+			"聚灵buff"
+			//死亡时发射投射物
+			{
+				"SerialId"									"102201000"
+				"Name"										"聚灵buff"
+				"RemoveOnDeath"								"0"
+				
+				"ModifierGroup"								"102201000"
+				"ModifierGroupStackType"					"MODIFIER_GROUP_STACK_IGNORE"
+				"ModifierGroupStackCount"					"99"
+				
+				"OnDeath"
+				{
+					"Heal"
+					{
+						"Target" 							"CASTER"
+						"Type" 								"HEAL_TYPE_NORMAL"
+						"HealAmount" 						"{Target.CurrAtt.MaxHp}f * 0.2f"
+					}
+					
+					"FireEffect"
+					{
+						"Target" 							"CASTER"
+						"EffectName"						"Assets/AssetBundle/Effect/Common/zhiliao_2.prefab"//回血
+						"EffectAttachPoint"					"GUANGHUAN_GD"
+					}
+					
+					"FireSound"
+					{
+						"Target" 							"CASTER"
+						"AttachPointName"					"GUANGHUAN_GD"
+						"SoundName"							"Assets/AssetBundle/Sounds/Battle/se_nxq_01.ogg"//技能音效
+						"VolumeInSoundGroup"    			"0.6"
+					}
+					
+					"ApplyModifier"
+					{
+						"Target" 							"CASTER"
+						"ModifierSerialId"					"102201002"
+					}
+					
+					/*提升3，添加中毒
+					"ApplyModifier"
+					{
+						"Target"
+						{
+							"Center"    					"CASTER"
+							"NodeRange"    					"7"
+							"Teams"     					"UNIT_TARGET_TEAM_ENEMY"
+							"Types"							"UNIT_TARGET_HERO"
+							"ExcludedFlags" 				"UNIT_TARGET_FLAG_DEAD"
+							"MaxNumber"						"1"
+							"Random"						"1"
+						}
+						"ModifierSerialId" 					"102201003"
+					}
+					提升3*/
+				}
+			}
+			
+			"聚灵光环"
+			{
+				"SerialId"									"102201001"
+				"Name"										"聚灵光环"
+				"IsHidden"									"1"
+				"Passive"									"1"
+				
+				"AuraSerialId" 								"102201000"
+				"AuraNodeRange" 							"7"
+				"AuraTargetTeams" 							"UNIT_TARGET_TEAM_ENEMY"
+				"AuraTargetModifierGroups"					"110"
+				"AuraTargetTypes" 							"UNIT_TARGET_HERO"
+				"AuraTargetExcludedFlags"					"UNIT_TARGET_FLAG_DEAD"
+				"AuraApplyToCaster"							"0"
+			}
+			
+			"攻击、减伤上升"
+			//提升1，增加60%攻击，持续5秒
+			//提升2，增加35%减伤，持续5秒
+			{
+				"SerialId"									"102201002"
+				"Name"										"攻击、减伤上升"
+				"IsBuff"									"1"
+				"IsShowPrompt"								"0"
+				"IsPurgable"								"1"
+				
+				
+				"Duration"         							"5 * Mathf.Max((1f + {Caster['cause_buff_timeadd_para']}f/1000 + {Target['gain_buff_timeadd_para']}f/1000),0)"
+				
+				"ModifierGroup"								"102201002"
+				"ModifierGroupStackType"					"MODIFIER_GROUP_STACK_IGNORE"
+				"ModifierGroupStackCount"					"99"
+				
+				"Properties"
+				{
+					/*提升1
+					"MODIFIER_PROPERTY_ATTACK_BONUS" 		"{Target.InitAtt.Attack}f * 0.6f"
+					提升1*/
+					
+					/*提升2
+					"MODIFIER_PROPERTY_DAMAGE_IN_BONUS"		"350f"
+					提升2*/
+				}
+				
+				"OnCreated"
+				{
+					/*提升1，增加攻击
+					"FireEffect"
+					{
+						"Target" 							"TARGET"
+						"EffectName"						"Assets/AssetBundle/Effect/Buff/gongji_shang.prefab"//buff提示
+						"EffectAttachPoint"					"GUANGHUAN_GD"
+						"IsAttachRot"						"0"
+					}
+					
+					"FireEffect"
+					{
+						"Target" 							"TARGET"
+						"EffectName"						"Assets/AssetBundle/Effect/Buff/gongji_shang_XT.prefab"//buff提示
+						"EffectAttachPoint"					"BUFF_GD"
+						"IsAttachRot"						"0"
+					}
+					
+					"FireSound"
+					{
+						"Target" 							"CASTER"
+						"AttachPointName"					"GUANGHUAN_GD"
+						"SoundName"							"Assets/AssetBundle/Sounds/Battle/buff.ogg"//buff音效
+					}
+					提升1*/
+					
+					/*提升2，增加减伤
+					"FireEffect"
+					{
+						"Target" 							"TARGET"
+						"EffectName"						"Assets/AssetBundle/Effect/Buff/jianshang_shang.prefab"//buff提示
+						"EffectAttachPoint"					"GUANGHUAN_GD"
+						"IsAttachRot"						"0"
+					}
+					
+					"FireEffect"
+					{
+						"Target" 							"TARGET"
+						"EffectName"						"Assets/AssetBundle/Effect/Buff/jianshang_shang_XT.prefab"//buff提示
+						"EffectAttachPoint"					"BUFF_GD"
+						"IsAttachRot"						"0"
+					}
+					
+					"FireSound"
+					{
+						"Target" 							"CASTER"
+						"AttachPointName"					"GUANGHUAN_GD"
+						"SoundName"							"Assets/AssetBundle/Sounds/Battle/buff.ogg"//buff音效
+					}
+					提升2*/
+				}
+			}
+			
+			/*提升3
+			"中毒"
+			{
+				"SerialId"									"102201003"
+				"Name"										"中毒"
+				"IsDebuff"									"1"
+				"IsShowPrompt"								"1"
+				"IsPurgable"								"1"
+				
+				"Duration"         							"5 * Mathf.Max((1f + {Caster['cause_debuff_timeadd_para']}f/1000 + {Target['gain_debuff_timeadd_para']}f/1000),0)"
+				"ThinkInterval"         					"0.5"
+				
+				"ModifierGroup"								"103"
+				"ModifierGroupStackType"					"MODIFIER_GROUP_STACK_IGNORE"
+				"ModifierGroupStackCount"					"99"
+				
+				"OnIntervalThink"
+				{
+					"Random"
+					//最大生命小于攻击的100倍时，使用最大生命造成伤害，反之使用攻击造成伤害
+					{
+						"Condition"							"{Caster.CurrAtt.MaxHp}f < {Caster.CurrAtt.Attack}f * 100"
+						
+						"OnSuccess"
+						{
+							"Damage"
+							{
+								"Target" 					"TARGET"
+								"Type" 						"DAMAGE_TYPE_MAGICAL"
+								"Damage" 					"{Caster.CurrAtt.MaxHp}f * 0.13f / 5f * 0.5f * (1 + {Caster['poison_damage_para']}f / 1000) * (1 + {Target['gain_poison_damageadd_para']}f / 1000)"
+								"Flags"						"DAMAGE_FLAG_NO_DIRECTOR_EVENT"
+							}
+						}
+						
+						"OnFailure"
+						{
+							"Damage"
+							{
+								"Target" 					"TARGET"
+								"Type" 						"DAMAGE_TYPE_MAGICAL"
+								"Damage" 					"{Caster.CurrAtt.Attack}f * 0.13f * 10 / 5f * 0.5f * (1 + {Caster['poison_damage_para']}f / 1000) * (1 + {Target['gain_poison_damageadd_para']}f / 1000)"
+								"Flags"						"DAMAGE_FLAG_NO_DIRECTOR_EVENT"
+							}
+						}
+					}
+				}
+				
+				"OnCreated"
+				{
+					"AttachEffect"
+					{
+						"Target" 							"TARGET"
+						"EffectName"						"Assets/AssetBundle/Effect/Common/zhongdu.prefab"//中毒
+						"EffectAttachPoint"					"XIONG_GD"
+					}
+					
+					"SetValue"
+					{
+						"Target"							"TARGET"
+						"Key"								"poison_layers_para"
+						"Value"								"{Target['poison_layers_para']} + 1"
+					}
+				}
+				
+				"OnPurged"
+				{
+					"SetValue"
+					{
+						"Target"							"TARGET"
+						"Key"								"poison_layers_para"
+						"Value"								"{Target['poison_layers_para']} - 1"
+					}
+				}
+				
+				"OnDestroy"
+				{
+					"SetValue"
+					{
+						"Target"							"TARGET"
+						"Key"								"poison_layers_para"
+						"Value"								"{Target['poison_layers_para']} - 1"
+					}
+				}
+			}
+			提升3*/
+			
+			"聚灵光环2"
+			{
+				"SerialId"									"102201004"
+				"Name"										"聚灵光环2"
+				"IsHidden"									"1"
+				"RemoveOnDeath"								"0"
+				
+				"AuraSerialId" 								"102201005"
+				"AuraNodeRange" 							"7"
+				"AuraTargetTeams" 							"UNIT_TARGET_TEAM_FRIENDLY"
+				"AuraTargetTypes" 							"UNIT_TARGET_HERO"
+				"AuraApplyToCaster"							"0"
+				"AuraTargetFlags"							"UNIT_TARGET_FLAG_DEAD"
+			}
+			
+			"聚灵buff2"
+			//死亡时发射投射物
+			{
+				"SerialId"									"102201005"
+				"Name"										"聚灵buff2"
+				"RemoveOnDeath"								"0"
+				
+				"ModifierGroup"								"102201005"
+				"ModifierGroupStackType"					"MODIFIER_GROUP_STACK_IGNORE"
+				"ModifierGroupStackCount"					"99"
+				
+				"OnRespawn"
+				{
+					"Heal"
+					{
+						"Target" 							"CASTER"
+						"Type" 								"HEAL_TYPE_NORMAL"
+						"HealAmount" 						"{Target.CurrAtt.MaxHp}f * 0.2f"
+					}
+					
+					"FireEffect"
+					{
+						"Target" 							"CASTER"
+						"EffectName"						"Assets/AssetBundle/Effect/Common/zhiliao_2.prefab"//回血
+						"EffectAttachPoint"					"GUANGHUAN_GD"
+					}
+					
+					"FireSound"
+					{
+						"Target" 							"CASTER"
+						"AttachPointName"					"GUANGHUAN_GD"
+						"SoundName"							"Assets/AssetBundle/Sounds/Battle/se_nxq_01.ogg"//技能音效
+						"VolumeInSoundGroup"    			"0.6"
+					}
+					
+					"ApplyModifier"
+					{
+						"Target" 							"CASTER"
+						"ModifierSerialId"					"102201002"
+					}
+					
+					/*提升3，添加中毒
+					"ApplyModifier"
+					{
+						"Target"
+						{
+							"Center"    					"CASTER"
+							"NodeRange"    					"7"
+							"Teams"     					"UNIT_TARGET_TEAM_ENEMY"
+							"Types"							"UNIT_TARGET_HERO"
+							"ExcludedFlags" 				"UNIT_TARGET_FLAG_DEAD"
+							"MaxNumber"						"1"
+							"Random"						"1"
+						}
+						"ModifierSerialId" 					"102201003"
+					}
+					提升3*/
+				}
+			}
+		}
+	}
+}

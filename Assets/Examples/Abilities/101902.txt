@@ -1,0 +1,192 @@
+﻿
+
+"LiaoZhaiAbilities"
+{
+	"Version"		"1"
+
+	"四叶草"
+	{
+		"SerialId"											"10190200"
+		"Id"												"101902"
+		"Name"												"四叶草"
+		"AbilityBehavior"									"ABILITY_BEHAVIOR_PASSIVE"
+
+		"ShowTipInfo"										"1"
+		"ShowCooldown"										"0"
+		"ShowPrompt"										"1"
+		"ShowIcon"											"1"
+
+		"Modifiers"
+		{
+			"四叶草buff"
+			//杀死单位后
+			{
+				"SerialId"									"101902000"
+				"Name"										"四叶草buff"
+				"Passive"          							"1"
+				
+				"OnKilledUnit"
+				{
+					"ApplyModifier"
+					{
+						"Target" 							"CASTER"
+						"ModifierSerialId" 					"101902001"
+					}
+				}
+			}
+			
+			"四叶草"
+			//提升25%的暴击和100%的暴击伤害，持续永久
+			//提升1，恢复30%的生命
+			//提升2，增加40%的攻速
+			//提升3，20%几率使敌人伤残
+			{
+				"SerialId"									"101902001"
+				"Name"										"四叶草"
+				"IsBuff"									"1"
+				"IsShowPrompt"								"1"
+				
+				"ModifierGroup"								"101902001"
+				"ModifierGroupStackType"					"MODIFIER_GROUP_STACK_IGNORE"
+				"ModifierGroupStackCount"					"1"
+				
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_CRIT_ODDS_BONUS" 	"250f"
+					"MODIFIER_PROPERTY_CRIT_DAMAGE_BONUS"	"1000f"
+					/*提升2
+					"MODIFIER_PROPERTY_ATTACK_SPEED_BONUS"	"400f"
+					提升2*/
+				}
+				
+				"OnCreated"
+				{
+					"FireEffect"
+					{
+						"Target" 							"TARGET"
+						"EffectName"						"Assets/AssetBundle/Effect/Buff/baoji_shang.prefab"//buff提示
+						"EffectAttachPoint"					"GUANGHUAN_GD"
+						"IsAttachRot"						"0"
+					}
+					
+					"FireEffect"
+					{
+						"Target" 							"TARGET"
+						"EffectName"						"Assets/AssetBundle/Effect/Buff/baoji_shang_XT.prefab"//buff提示
+						"EffectAttachPoint"					"BUFF_GD"
+						"IsAttachRot"						"0"
+					}
+					
+					"FireSound"
+					{
+						"Target" 							"CASTER"
+						"AttachPointName"					"GUANGHUAN_GD"
+						"SoundName"							"Assets/AssetBundle/Sounds/Battle/buff.ogg"//buff音效
+					}
+					
+					/*提升1，恢复生命
+					"Heal"
+					{
+						"Target" 							"TARGET"
+						"Type" 								"HEAL_TYPE_NORMAL"
+						"HealAmount" 						"0.3f * {Target.InitAtt.MaxHp}f"
+					}
+					
+					"FireEffect"
+					{
+						"Target" 							"TARGET"
+						"EffectName"						"Assets/AssetBundle/Effect/Common/zhiliao_2.prefab"//回血
+						"EffectAttachPoint"					"GUANGHUAN_GD"
+					}
+					提升1*/
+					
+					/*提升2，攻速上升
+					"DelayedAction"
+					{
+						"Delay"								"0.5"
+						"Action"
+						{
+							"FireEffect"
+							{
+								"Target" 					"TARGET"
+								"EffectName"				"Assets/AssetBundle/Effect/Buff/gongsu_shang.prefab"//buff提示
+								"EffectAttachPoint"			"GUANGHUAN_GD"
+								"IsAttachRot"				"0"
+							}
+							
+							"FireEffect"
+							{
+								"Target" 					"TARGET"
+								"EffectName"				"Assets/AssetBundle/Effect/Buff/gongsu_shang_XT.prefab"//buff提示
+								"EffectAttachPoint"			"BUFF_GD"
+								"IsAttachRot"				"0"
+							}
+							
+							"FireSound"
+							{
+								"Target" 					"CASTER"
+								"AttachPointName"			"GUANGHUAN_GD"
+								"SoundName"					"Assets/AssetBundle/Sounds/Battle/buff.ogg"//buff音效
+							}
+						}
+					}
+					提升2*/
+				}
+				
+				/*提升3，普攻伤害造成伤残
+				"OnDealAttackDamage"
+				{
+					"Random"
+					{
+						"Chance"							"0.2f * (1f + {Caster['skill_probabilityadd_para']}f / 1000)"
+						
+						"OnSuccess"
+						{
+							"ApplyModifier"
+							{
+								"Target" 					"UNIT"
+								"ModifierSerialId" 			"101902002"
+							}
+						}
+					}
+				}
+				提升3*/
+			}
+			
+			/*提升3
+			"伤残"
+			//无法闪避和暴击，受到治疗减少50%，持续5秒
+			{
+				"SerialId"									"101902002"
+				"Name"										"伤残"
+				"IsDebuff"									"1"
+				"IsShowPrompt"								"1"
+				"IsPurgable"								"1"
+				
+				"Duration"         							"5f * Mathf.Max((1f + {Caster['cause_debuff_timeadd_para']}f/1000 + {Target['gain_debuff_timeadd_para']}f/1000),0)"
+				
+				"ModifierGroup"								"111"
+				"ModifierGroupStackType"					"MODIFIER_GROUP_STACK_ABSORB_OTHER_DURATION_AND_CLEAR"
+				"ModifierGroupStackCount"					"2"
+				
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_CRIT_ODDS_BONUS" 	"-9999"
+					"MODIFIER_PROPERTY_DODGE_ODDS_BONUS"	"-9999"
+					"MODIFIER_PROPERTY_HEAL_IN_BONUS"		"-500"
+				}
+				
+				"OnCreated"
+				{
+					"AttachEffect"
+					{
+						"Target" 							"TARGET"
+						"EffectName"						"Assets/AssetBundle/Effect/Common/shangcan.prefab"//伤残
+						"EffectAttachPoint"					"GUANGHUAN_GD"
+					}
+				}
+			}
+			提升3*/
+		}
+	}
+}
